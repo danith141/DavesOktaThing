@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_417611_daves_o_0.okta_user_user" name="x_417611_daves_o_0.okta_user_user">7bf34a018370ae10cfbfc5a6feaad3df</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 15:47:42</sys_created_on>
+        <sys_id>33f34a018370ae10cfbfc5a6feaad3e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7bf34a018370ae10cfbfc5a6feaad3df</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_embedded_help_role_33f34a018370ae10cfbfc5a6feaad3e3</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 15:47:42</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

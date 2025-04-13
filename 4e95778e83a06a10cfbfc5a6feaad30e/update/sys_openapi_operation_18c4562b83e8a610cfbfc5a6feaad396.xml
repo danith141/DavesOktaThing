@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_openapi_operation">
+    <sys_openapi_operation action="INSERT_OR_UPDATE">
+        <complex_object_ids/>
+        <deprecated>false</deprecated>
+        <http_method>get</http_method>
+        <name>List Recovery Users</name>
+        <openapi display_value="Users (Okta API)-2.1.0">c4c496e783e8a610cfbfc5a6feaad37c</openapi>
+        <path>api/v1/users</path>
+        <serialized_operation>{"fName":"List Recovery Users","fOperationId":"operation_ListRecoveryUsers","fDescription":"","fPath":"api/v1/users","fHttpMethod":"GET","fDeprecated":false,"fResponses":[],"fParameters":[{"fName":"filter","fRequired":true,"fDeprecated":false,"fAllowEmptyValue":false,"fAllowReserved":false,"fParameterType":"query","fExplode":false,"fStyle":"form","fContents":[{"fSchema":{"fName":"filter1183857646","fExclusiveMaximum":false,"fExclusiveMinimum":false,"fUniqueItems":false,"fRequired":[],"fEnum":[],"fType":"string","fProperties":[],"fOneOf":[],"fNullable":false,"fReadOnly":false,"fWriteOnly":false,"fDeprecated":false,"fGlideType":"string"}}]},{"fName":"limit","fRequired":true,"fDeprecated":false,"fAllowEmptyValue":false,"fAllowReserved":false,"fParameterType":"query","fExplode":false,"fStyle":"form","fContents":[{"fSchema":{"fName":"limit9142861386","fExclusiveMaximum":false,"fExclusiveMinimum":false,"fUniqueItems":false,"fRequired":[],"fEnum":[],"fType":"string","fProperties":[],"fOneOf":[],"fNullable":false,"fReadOnly":false,"fWriteOnly":false,"fDeprecated":false,"fGlideType":"string"}}]}],"fTags":["Create User"]}</serialized_operation>
+        <sys_class_name>sys_openapi_operation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-03 01:10:02</sys_created_on>
+        <sys_id>18c4562b83e8a610cfbfc5a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Recovery Users</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_openapi_operation_18c4562b83e8a610cfbfc5a6feaad396</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-03 01:10:02</sys_updated_on>
+    </sys_openapi_operation>
+</record_update>

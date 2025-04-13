@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e5d352c583b0ae10cfbfc5a6feaad3ca" label="Okta User" max_length="40" name="x_417611_daves_o_0_st_okta_user" type="collection">
+        <element label="passwordChanged" max_length="40" name="passwordchanged" type="glide_date_time"/>
+        <element label="statusChanged" max_length="40" name="statuschanged" type="glide_date_time"/>
+        <element label="status" max_length="40" name="status" type="string"/>
+        <element label="profile_login" max_length="40" name="profile_login" type="string"/>
+        <element label="activated" max_length="40" name="activated" type="glide_date_time"/>
+        <element label="created" max_length="40" name="created" type="glide_date_time"/>
+        <element label="profile_email" max_length="40" name="profile_email" type="string"/>
+        <element label="profile_secondEmail" max_length="40" name="profile_secondemail" type="string"/>
+        <element label="profile_mobilePhone" max_length="40" name="profile_mobilephone" type="phone_number_e164"/>
+        <element label="lastLogin" max_length="40" name="lastlogin" type="glide_date_time"/>
+        <element label="_links_self" max_length="1024" name="links_self" type="url"/>
+        <element label="credentials_recovery_question" max_length="40" name="credentials_recovery_question" type="string"/>
+        <element label="profile_lastName" max_length="40" name="profile_lastname" type="string"/>
+        <element label="id" max_length="20" name="id" type="string"/>
+        <element label="profile_firstName" max_length="40" name="profile_firstname" type="string"/>
+        <element label="type" max_length="20" name="type" type="string"/>
+        <element label="lastUpdated" max_length="40" name="lastupdated" type="glide_date_time"/>
+    </element>
+</database>

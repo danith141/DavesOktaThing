@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="profile_login" label="profile_login" language="en" table="x_417611_daves_o_0_st_okta_user">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>profile_login</element>
+            <help/>
+            <hint/>
+            <label>profile_login</label>
+            <language>en</language>
+            <name>x_417611_daves_o_0_st_okta_user</name>
+            <plural>profile_logins</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-04-07 17:05:05</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>profile_login</sys_name>
+            <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+            <sys_update_name>sys_documentation_x_417611_daves_o_0_st_okta_user_profile_login_en</sys_update_name>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-04-07 19:28:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

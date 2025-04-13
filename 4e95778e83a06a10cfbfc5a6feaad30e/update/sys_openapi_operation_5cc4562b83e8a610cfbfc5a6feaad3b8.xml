@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_openapi_operation">
+    <sys_openapi_operation action="INSERT_OR_UPDATE">
+        <complex_object_ids/>
+        <deprecated>false</deprecated>
+        <http_method>delete</http_method>
+        <name>Clear User Sessions</name>
+        <openapi display_value="Users (Okta API)-2.1.0">c4c496e783e8a610cfbfc5a6feaad37c</openapi>
+        <path>api/v1/users/{userId}/sessions</path>
+        <serialized_operation>{"fName":"Clear User Sessions","fOperationId":"operation_ClearUserSessions","fDescription":"","fPath":"api/v1/users/{userId}/sessions","fHttpMethod":"DELETE","fDeprecated":false,"fResponses":[],"fParameters":[{"fName":"userId","fRequired":true,"fDeprecated":false,"fAllowEmptyValue":false,"fAllowReserved":false,"fParameterType":"path","fExplode":false,"fStyle":"simple","fContents":[{"fSchema":{"fName":"userId4794013056","fExclusiveMaximum":false,"fExclusiveMinimum":false,"fUniqueItems":false,"fRequired":[],"fEnum":[],"fType":"string","fProperties":[],"fOneOf":[],"fNullable":false,"fReadOnly":false,"fWriteOnly":false,"fDeprecated":false,"fGlideType":"string"}}]}],"fTags":["Create User"]}</serialized_operation>
+        <sys_class_name>sys_openapi_operation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-03 01:10:02</sys_created_on>
+        <sys_id>5cc4562b83e8a610cfbfc5a6feaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Clear User Sessions</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_openapi_operation_5cc4562b83e8a610cfbfc5a6feaad3b8</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-03 01:10:02</sys_updated_on>
+    </sys_openapi_operation>
+</record_update>

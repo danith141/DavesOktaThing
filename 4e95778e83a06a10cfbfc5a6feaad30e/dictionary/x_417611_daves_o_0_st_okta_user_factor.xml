@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dd3586818370ae10cfbfc5a6feaad374" label="Okta User Factor" max_length="40" name="x_417611_daves_o_0_st_okta_user_factor" type="collection">
+        <element label="userid" max_length="200" name="userid" type="string"/>
+        <element label="Verify allow" max_length="4000" name="verify_allow" type="glide_list"/>
+        <element label="id" max_length="20" name="id" type="string"/>
+        <element label="lastUpdated" max_length="40" name="lastupdated" type="glide_date_time"/>
+        <element label="factorType" max_length="40" name="factortype" type="string"/>
+        <element label="status" max_length="40" name="status" type="string"/>
+        <element label="Verify href" max_length="1024" name="verify_href" type="url"/>
+    </element>
+</database>

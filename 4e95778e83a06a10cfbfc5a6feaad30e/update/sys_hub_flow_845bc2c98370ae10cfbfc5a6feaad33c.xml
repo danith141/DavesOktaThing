@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3063000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>okta_users_remote_table_query</internal_name>
+        <label_cache>[{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile","label":"3 - For Each➛root_array_object➛profile","reference":"","reference_display":"profile","type":"object","base_type":"object","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["profile_firstname"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.lastUpdated","label":"3 - For Each➛root_array_object➛lastUpdated","reference":"","reference_display":"lastUpdated","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["lastupdated"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.credentials.recovery_question.question","label":"3 - For Each➛root_array_object➛credentials➛recovery_question➛question","reference":"","reference_display":"question","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["recovery_question","credentials_recovery_question"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.a__links.self.href","label":"3 - For Each➛root_array_object➛a__links➛self➛href","reference":"","reference_display":"href","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["self_link","links_self"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.email","label":"3 - For Each➛root_array_object➛profile➛email","reference":"","reference_display":"email","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["email","profile_email"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.login","label":"3 - For Each➛root_array_object➛profile➛login","reference":"","reference_display":"login","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["login","profile_login"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.secondEmail","label":"3 - For Each➛root_array_object➛profile➛secondEmail","reference":"","reference_display":"secondEmail","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["secondemail","profile_secondemail"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.mobilePhone","label":"3 - For Each➛root_array_object➛profile➛mobilePhone","reference":"","reference_display":"mobilePhone","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["mobilephone","profile_mobilephone"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.lastName","label":"3 - For Each➛root_array_object➛profile➛lastName","reference":"","reference_display":"lastName","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["lastname","profile_lastname"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.firstName","label":"3 - For Each➛root_array_object➛profile➛firstName","reference":"","reference_display":"firstName","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["firstname","profile_firstname"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.type.id","label":"3 - For Each➛root_array_object➛type➛id","reference":"","reference_display":"id","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["type"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.passwordChanged","label":"3 - For Each➛root_array_object➛passwordChanged","reference":"","reference_display":"passwordChanged","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["passwordchanged"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.lastLogin","label":"3 - For Each➛root_array_object➛lastLogin","reference":"","reference_display":"lastLogin","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["lastlogin"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.statusChanged","label":"3 - For Each➛root_array_object➛statusChanged","reference":"","reference_display":"statusChanged","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["statuschanged"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.activated","label":"3 - For Each➛root_array_object➛activated","reference":"","reference_display":"activated","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["activated"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.created","label":"3 - For Each➛root_array_object➛created","reference":"","reference_display":"created","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["created"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.status","label":"3 - For Each➛root_array_object➛status","reference":"","reference_display":"status","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["status"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.id","label":"3 - For Each➛root_array_object➛id","reference":"","reference_display":"id","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["id"]},"attributes":{}},{"name":"Remote Table Query_1.query_parameters","label":"Trigger - Remote Table Query➛Query Parameters","type":"simple_name_values","base_type":"simple_name_values","usedInstances":{"04f9cb22-d46a-43f8-a945-0f2ed582d708":["log_message"]},"attributes":{}},{"name":"Remote Table Query_1.query_id","label":"Trigger - Remote Table Query➛Query ID","type":"string_full_utf8","base_type":"string_full_utf8","usedInstances":{"04f9cb22-d46a-43f8-a945-0f2ed582d708":["log_message"],"1cd7ab29-e6ae-4c1d-814c-161974b84559":["query_id"]},"attributes":{"visible":"false"}},{"name":"e91ce4b0-18ed-4352-aa47-f4ded24de449.users","label":"2 - Okta Get Users➛Users","reference_display":"Users","type":"array.object","base_type":"array.object","usedInstances":{"165054e3-c530-4828-8d2b-11c44ceb2daa":["items"]},"attributes":{"sourceId":"10dbcfd9-4202-4e87-a2a1-5261aeff5c01","child_name":"root_array_object","uiUniqueId":"054ab052-6c2d-4e56-b40e-212bcc42062a","uiTypeLabel":"Array.Object","co_type_name":"FDe2fe82010fb0ae10d23b9b56f99fdba9","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"3090d676-908d-4ae3-be7b-368f1ccaf966","uiType":"array.object","child_type":"object","child_uiUniqueId":"e6031451-e858-4fc3-a435-86b16a40a16b"}}]</label_cache>
+        <master_snapshot>ca71d6c183b0ae10cfbfc5a6feaad3fb</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Okta Users remote table query</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>6a711ac183b0ae10cfbfc5a6feaad358</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:19:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>845bc2c98370ae10cfbfc5a6feaad33c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Okta Users remote table query</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_hub_flow_845bc2c98370ae10cfbfc5a6feaad33c</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 19:53:48</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_flow_rt_query_trigger action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <name/>
+        <published_version/>
+        <remote_table>x_417611_daves_o_0_st_okta_user</remote_table>
+        <sys_class_name>sys_flow_rt_query_trigger</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a711ac183b0ae10cfbfc5a6feaad358</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 19:53:49</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_rt_query_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=845bc2c98370ae10cfbfc5a6feaad33c^sys_idNOT IN085bc2c98370ae10cfbfc5a6feaad33e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>845bc2c98370ae10cfbfc5a6feaad33c</id>
+        <name>Okta Users remote table query</name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:19:40</sys_created_on>
+        <sys_id>085bc2c98370ae10cfbfc5a6feaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:19:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=085bc2c98370ae10cfbfc5a6feaad33e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=845bc2c98370ae10cfbfc5a6feaad33c^sys_idNOT IN1aec064d8370ae10cfbfc5a6feaad36a,a6ec064d8370ae10cfbfc5a6feaad36d,d6ecc2c98370ae10cfbfc5a6feaad382"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8),visible=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Query ID</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</model>
+        <model_id>845bc2c98370ae10cfbfc5a6feaad33c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_845bc2c98370ae10cfbfc5a6feaad33c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>1aec064d8370ae10cfbfc5a6feaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:26:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1aec064d8370ae10cfbfc5a6feaad36a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>table_name</label>
+        <mandatory>false</mandatory>
+        <max_length>80</max_length>
+        <model display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</model>
+        <model_id>845bc2c98370ae10cfbfc5a6feaad33c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_845bc2c98370ae10cfbfc5a6feaad33c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>a6ec064d8370ae10cfbfc5a6feaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:26:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a6ec064d8370ae10cfbfc5a6feaad36d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=simple_name_values,uiTypeLabel=Name-Value Pairs</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">simple_name_values</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</model>
+        <model_id>845bc2c98370ae10cfbfc5a6feaad33c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_845bc2c98370ae10cfbfc5a6feaad33c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>d6ecc2c98370ae10cfbfc5a6feaad382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:26:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d6ecc2c98370ae10cfbfc5a6feaad382"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=845bc2c98370ae10cfbfc5a6feaad33c^sys_idNOT IN62ec064d8370ae10cfbfc5a6feaad391"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</flow>
+        <name>Remote Table Query</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>62ec064d8370ae10cfbfc5a6feaad391</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:37:31</sys_updated_on>
+        <trigger_definition display_value="Remote Table Query">778cf3bf37232110aba6473174924b7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/3VSS0/DMAz+KyjnHtZ1KqM3LpO4MGkbXCYUeYmrRaRJSdyxgvbfSfoCMbi1/hx/D3v/yTQcULOCbbCyhDc7OGhkCVOG0BnQu7bGgFIscwNVxCowEsi6lhUlaI8JK52tdljVGginonUSHSvS2SxhJ9ANblv/IMOwMKKbVLCG08DXNYTKmS/S2zxNuYQTem75jHvi9pWANz6MS5hUPvC0z8ODdYBunnpIHJWWDg0r9i8Jq8EFFooaPn9BKsqQ5WKRIwrIsmyepjM4QH63xFxmKeYpLsPAf8K5Uk9/pPTTPp4JjUQ5ZXMdoUOQa6O/C8ewgj6sCs5efQSCbB77Sgw+ROTzredeOFUTP41SJpwPQV3LF0erBK5rUtb0DP3j7lNY3VTmsXcY48YSGk1j3KES9sAl1tFQVDiewPZo3zcj+UqZzv0AaitAT39A5NShIfRhM5dOMn9rYkNPOIzmvbrLtPKVQj3cT+/6XpA6jQd3efkC4rRl/c4CAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>remote_table_query</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=845bc2c98370ae10cfbfc5a6feaad33c^sys_idNOT IN216f0e0183b0ae10cfbfc5a6feaad309,a16f0e0183b0ae10cfbfc5a6feaad318,eaec064d8370ae10cfbfc5a6feaad392"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</action_type>
+        <action_type_parent display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:37:31</sys_created_on>
+        <sys_id>216f0e0183b0ae10cfbfc5a6feaad309</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:15</sys_updated_on>
+        <ui_id>e91ce4b0-18ed-4352-aa47-f4ded24de449</ui_id>
+        <values>H4sIAAAAAAAA/41Ry07DMBD8F5/byGmhiXpDQkhIPCReF4Sijb1uLTm2cexCQfw76yapRE8cZ3Z3dnb29ZtpydYMVwrrBS/rZcsBSy5Uq8Q5EAsgl1XLZsxCh9RpdKcjwR2YlPGCc0JS997A/uUPKbbayICWrV/fZsxDIIWIga2/T0px77Ex0KKh2ccYtN3Q+H+NTYOTsxOjWZxgP8m6ILOHcsbwM6KVSGsUmB5nrAMrIbqwZ+sYEhEBQd5bsz92bLWNJMZy72evv0i55pznToV0j8CheoTNmMxAi63TAu991M4OTITWjDPCmdTZu8F9zhQVJBOnTIlJPemhz6azjdGTety6j4dp4ZW2h/vGonECzBFBpBTaFLHPT0j66SSbgbk5/QQa7Ghj04H3xDQ+uJ0+bCHTXbExBApl3Ae56/XGFiDyhQWFCcUV8ZcH+gWCzufekgwN53XPVr8nvM6fFrUSdamWc87PqvnZqpLzdlVX87JatCBrLuS5ZD+HaJv3lI8aQhrjaIZEqaEXQft4QRZ2OF7+8/YLF5Z7OOkCAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Remote Table Record">fd16884253912110aba6ddeeff7b121e</action_type>
+        <action_type_parent display_value="Create Remote Table Record">0ae5444253912110aba6ddeeff7b12d8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>165054e3-c530-4828-8d2b-11c44ceb2daa</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:37:31</sys_created_on>
+        <sys_id>a16f0e0183b0ae10cfbfc5a6feaad318</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:37</sys_updated_on>
+        <ui_id>1cd7ab29-e6ae-4c1d-814c-161974b84559</ui_id>
+        <values>H4sIAAAAAAAA/+1YTW/bOBD9K4HOliDKkiznVmy3QIG26bZNL91WoMiRTZSiVJFykjX833doSorXDTaJErQXn2x+zJs3j5wBR1+2nuDeuVcuSZplcZTMlyQiJKQFTTkHKMtFQaIo8maeohXgTkMLCTjcUNnZ8XUek0VKSM7pBnRe52GuTV5/NzTvNLS4kwvdSHrzuTe4wKWzS7fE1kLyFpR3/uXrzGtoiz4Mrpxvj5bMTQO5pAVIRPhkKZy9s3xmD6Y/GA/8j8KxDoZhrhx03XLLhcw8uDagOKCrkkoNM6+iilNTtzfjTAuUXyh5O7EWyiCiZzdfa/EPwmeh3VcChsXArY3DvJfJTbN1LRhcNEbUys04om6xll2l3rkArMBQ0k6aQWCcQeVzDo3lbEn0jMqP6/rqw+DwlVD78PpFWTMqxxE1phVFZ0Dbs+jEpzvkcbNv7joUkFCh57yiTSPUKm/aeiP23pB8FawkDoJS1lfIUouVCiizkQaoKQ1e4fzL/fRn2goL+xZh9velE5dK/OjgtT30OExTFkLhE54kfpwVib8swtJfLHgZ0ThbELr0dnuJ8x+dDc6J1cuSO2Vxg2ataMwLpLCBXoHdbEgM/r83K729SaUAyfVBZgj+dxeGc77dkjQJkxjmPkvmITKNMj/jERInLI4ZFBGnNBAGqkDw3e6bNtR0+vHGzg4BGF5GAxPc94YIYQ9kMw1kNB1DYWuqVlOgnPkfzhzhJNVG1iuhHg9lTd9YU4RpqNZXmN2TeQ0At8xs/Xg8jrVyZ27pdQ2fprg1vnTGNrq2LgWmaSlabezlnBCfgwj2EDanD2Cts6ehWoQj0Kou8KdZ1+oJuA7kvQU5gNbAakz4igo5HdqB/GlBDqWYdhVHHYbr2MM9kSP07KRQ3zWGLcsJuZvne/PAmgdrLJ2unNiCKbAw5i0KsYH2BisqaFuzJxWZAS74CS4Y/ux2Pz8dThX1VFFPFfVUUU8VdXJFndhxQYV12MCZq8SzB7+NB4DxcXz8WB76rt5Bvukd9L1X9Gy9F4oZ/qb2y7Td83RfxyIddWDHh/RLurBlklBsxFJ/ztLSj2mU+gWjpR8WRUgWyygDkt3bhQnVdEYHTuT7OrI5sCwiS4q3bt7fumUGKZ8TSEl80JEhRcwDNLrtybbbD1DVqJFrV//a7yDBsPOuR8dDTKZl1Uc8ZbUas+n+uAbDPYez1y/vDLXPKD2A95k0f8avGL8rkZ7tO8Yozn8zaDyQX5I5UVIkPOGlX6SF/X6RJH6WZdxnNCE8Y3G5CMvJ3y++/gselDz02hMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>eaec064d8370ae10cfbfc5a6feaad392</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:37:31</sys_updated_on>
+        <ui_id>04f9cb22-d46a-43f8-a945-0f2ed582d708</ui_id>
+        <values>H4sIAAAAAAAA/91UXW/TMBT9K5Gf26hpV8b6hjYmIbFVbFAeShU5yU1q4diZ7XQrUf4714mbhlJBi3hASH7x8bnX534uK8ISMiPTKA6iOH41nQSj0QRPlAbJVTC6gnj6+jK5JAMiaA7I5DILOWyAI7ShvLQYE6nEa8J0wel24dB3LRqvGU8UCDJbrgakoAr9GFBkVh08mW0BIacRup6R67VkMaD5qfJ2hu+dtiNy7QcIxTvXUiVWx2hA4MWASAC/SinXMCA5FQk1Um07RAFN5oLvgTUTBr0RS37R7Bu6vhhZXgoYUgztW3cNXXZauNWgMfCqUz4cevdSgDcc9lLbk1kP9lyX24MCOGbQZ36mSjCR9cjPiOzJ4z75rVJS9ajg7o47qbFMCaS05Ob6/AiCkyMYnxPB5IwILmwEbfLnhWESW48EtjVoxJ3YWPIyF/dt+5Au3sVBr7fozdGWLzWWGwrbUrZHXMOkj2v5/LDrh1smGkXukcuY8u5GjVEsKo3Nb0WAQ46OwpwWBSYiLJTcsMYYxeZ+xvHip1w+46eaZcKnsQ3Nxw6m/i3iNw28oIrZMO/QDRrXTXOGT6X9tw3UKQ6btFiCjhUrzBt0twEnzia7mcnx5FczCdMfZzAHrWkGvcos518N9T5pUNp7gFwa8JoqeE8lqO3KwwxkGSiPiaI02hu2uMeSmVdVzuBjY/DBPoSB3xBCltT1F9GSu22jf2O0J9b1z5vsX5b6Z+v1ESU3I3VqKXeGd10djxbXrVi9c7+b/L+2YsfT6Xk7thvzs6b8fx/i1XdNj4OI+QcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=845bc2c98370ae10cfbfc5a6feaad33c^sys_idNOT IN616f0e0183b0ae10cfbfc5a6feaad30a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e56f0e0183b0ae10cfbfc5a6feaad309</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:37:31</sys_created_on>
+        <sys_id>616f0e0183b0ae10cfbfc5a6feaad30a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:42</sys_updated_on>
+        <ui_id>165054e3-c530-4828-8d2b-11c44ceb2daa</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhr+W1b4VGAr0sBXoil6KwqAlOhEmS5okJ/UM//dSsZMWPe4Sh4/k43siJ2aGYIfgn8yt93KvWf3yumFSR4z+T0xDj6xmMmDv2YYdQQ0xniasMo5lm26zGxTbsviWbwHK79uuFChy+inLKhk8Oj/P1CiktwrG5//t5wephMNVoAVHugI6Vk9fUmG02ChoUdGYR+TGiShcCgqzSnRVlla8yHdFnqb5TZm1u6LNclEAih3VXTrvV8Nf/Ed2Ct2Vlz5RRZ5uGL4F1CSe1R0ojxvWgxYQjBtZHdxAgEMQD1qN14qD1IHoWKx98/IfcWdpGgs7JEccl+Q1bNZnXGB+MJLjgw3S6AUJ0Kq1hxs19PrXIj8uADsYVLgsgBB63EagjZqjilVS9/tgTo+XgXdSn/2tSWU4qGsEITjZDgF9XAMq7Imo6cFaqfeNdeYoz82kpU/2ioKkU+ZEQ+OpJcCj8ISeCJI7wn+c4WdwMrr4STTUPJ/dN3+HOHfxsSpuFtNU4LmTNtwS3RFXcfNrvNWFyS+HIZBLTwOfInZ/ufCYGGnJkn+GTsb9iVI/sPkdh0URUisDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_845bc2c98370ae10cfbfc5a6feaad33c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>1aecc2c98370ae10cfbfc5a6feaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:26:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_id</element>
+        <help/>
+        <hint/>
+        <label>Query ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_845bc2c98370ae10cfbfc5a6feaad33c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>5aec064d8370ae10cfbfc5a6feaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:26:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>table_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_845bc2c98370ae10cfbfc5a6feaad33c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:26:39</sys_created_on>
+        <sys_id>a6ec064d8370ae10cfbfc5a6feaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:26:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_845bc2c98370ae10cfbfc5a6feaad33c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>okta_users_remote_table_query</internal_name>
+        <label_cache>[{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile","label":"3 - For Each➛root_array_object➛profile","reference":"","reference_display":"profile","type":"object","base_type":"object","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["profile_firstname"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.lastUpdated","label":"3 - For Each➛root_array_object➛lastUpdated","reference":"","reference_display":"lastUpdated","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["lastupdated"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.credentials.recovery_question.question","label":"3 - For Each➛root_array_object➛credentials➛recovery_question➛question","reference":"","reference_display":"question","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["recovery_question","credentials_recovery_question"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.a__links.self.href","label":"3 - For Each➛root_array_object➛a__links➛self➛href","reference":"","reference_display":"href","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["self_link","links_self"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.email","label":"3 - For Each➛root_array_object➛profile➛email","reference":"","reference_display":"email","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["email","profile_email"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.login","label":"3 - For Each➛root_array_object➛profile➛login","reference":"","reference_display":"login","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["login","profile_login"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.secondEmail","label":"3 - For Each➛root_array_object➛profile➛secondEmail","reference":"","reference_display":"secondEmail","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["secondemail","profile_secondemail"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.mobilePhone","label":"3 - For Each➛root_array_object➛profile➛mobilePhone","reference":"","reference_display":"mobilePhone","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["mobilephone","profile_mobilephone"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.lastName","label":"3 - For Each➛root_array_object➛profile➛lastName","reference":"","reference_display":"lastName","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["lastname","profile_lastname"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.profile.firstName","label":"3 - For Each➛root_array_object➛profile➛firstName","reference":"","reference_display":"firstName","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["firstname","profile_firstname"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.type.id","label":"3 - For Each➛root_array_object➛type➛id","reference":"","reference_display":"id","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["type"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.passwordChanged","label":"3 - For Each➛root_array_object➛passwordChanged","reference":"","reference_display":"passwordChanged","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["passwordchanged"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.lastLogin","label":"3 - For Each➛root_array_object➛lastLogin","reference":"","reference_display":"lastLogin","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["lastlogin"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.statusChanged","label":"3 - For Each➛root_array_object➛statusChanged","reference":"","reference_display":"statusChanged","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["statuschanged"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.activated","label":"3 - For Each➛root_array_object➛activated","reference":"","reference_display":"activated","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["activated"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.created","label":"3 - For Each➛root_array_object➛created","reference":"","reference_display":"created","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["created"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.status","label":"3 - For Each➛root_array_object➛status","reference":"","reference_display":"status","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["status"]},"attributes":{}},{"name":"165054e3-c530-4828-8d2b-11c44ceb2daa.item.id","label":"3 - For Each➛root_array_object➛id","reference":"","reference_display":"id","type":"string","base_type":"string","usedInstances":{"1cd7ab29-e6ae-4c1d-814c-161974b84559":["id"]},"attributes":{}},{"name":"Remote Table Query_1.query_parameters","label":"Trigger - Remote Table Query➛Query Parameters","type":"simple_name_values","base_type":"simple_name_values","usedInstances":{"04f9cb22-d46a-43f8-a945-0f2ed582d708":["log_message"]},"attributes":{}},{"name":"Remote Table Query_1.query_id","label":"Trigger - Remote Table Query➛Query ID","type":"string_full_utf8","base_type":"string_full_utf8","usedInstances":{"04f9cb22-d46a-43f8-a945-0f2ed582d708":["log_message"],"1cd7ab29-e6ae-4c1d-814c-161974b84559":["query_id"]},"attributes":{"visible":"false"}},{"name":"e91ce4b0-18ed-4352-aa47-f4ded24de449.users","label":"2 - Okta Get Users➛Users","reference_display":"Users","type":"array.object","base_type":"array.object","usedInstances":{"165054e3-c530-4828-8d2b-11c44ceb2daa":["items"]},"attributes":{"sourceId":"10dbcfd9-4202-4e87-a2a1-5261aeff5c01","child_name":"root_array_object","uiUniqueId":"054ab052-6c2d-4e56-b40e-212bcc42062a","uiTypeLabel":"Array.Object","co_type_name":"FDe2fe82010fb0ae10d23b9b56f99fdba9","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"3090d676-908d-4ae3-be7b-368f1ccaf966","uiType":"array.object","child_type":"object","child_uiUniqueId":"e6031451-e858-4fc3-a435-86b16a40a16b"}}]</label_cache>
+        <master>true</master>
+        <name>Okta Users remote table query</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Okta Users remote table query">845bc2c98370ae10cfbfc5a6feaad33c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ca71d6c183b0ae10cfbfc5a6feaad3fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:44</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ca71d6c183b0ae10cfbfc5a6feaad3fb^sys_idNOT IN4e71d6c183b0ae10cfbfc5a6feaad3fc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ca71d6c183b0ae10cfbfc5a6feaad3fb</id>
+        <name>Okta Users remote table query</name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_id>4e71d6c183b0ae10cfbfc5a6feaad3fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:34</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4e71d6c183b0ae10cfbfc5a6feaad3fc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ca71d6c183b0ae10cfbfc5a6feaad3fb^sys_idNOT IN12711ac183b0ae10cfbfc5a6feaad30c,4e71d6c183b0ae10cfbfc5a6feaad3fd,5a711ac183b0ae10cfbfc5a6feaad312"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string_full_utf8,visible=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Query ID</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</model>
+        <model_id>ca71d6c183b0ae10cfbfc5a6feaad3fb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ca71d6c183b0ae10cfbfc5a6feaad3fb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_id>12711ac183b0ae10cfbfc5a6feaad30c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=12711ac183b0ae10cfbfc5a6feaad30c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=simple_name_values</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">simple_name_values</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</model>
+        <model_id>ca71d6c183b0ae10cfbfc5a6feaad3fb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ca71d6c183b0ae10cfbfc5a6feaad3fb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_id>4e71d6c183b0ae10cfbfc5a6feaad3fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e71d6c183b0ae10cfbfc5a6feaad3fd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>table_name</label>
+        <mandatory>false</mandatory>
+        <max_length>80</max_length>
+        <model display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</model>
+        <model_id>ca71d6c183b0ae10cfbfc5a6feaad3fb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ca71d6c183b0ae10cfbfc5a6feaad3fb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_id>5a711ac183b0ae10cfbfc5a6feaad312</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5a711ac183b0ae10cfbfc5a6feaad312"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ca71d6c183b0ae10cfbfc5a6feaad3fb^sys_idNOT INde711ac183b0ae10cfbfc5a6feaad320"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</flow>
+        <name>Remote Table Query</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:35</sys_created_on>
+        <sys_id>de711ac183b0ae10cfbfc5a6feaad320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:35</sys_updated_on>
+        <trigger_definition display_value="Remote Table Query">778cf3bf37232110aba6473174924b7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/3VSS0/DMAz+KyjnHtZ1KqM3LpO4MGkbXCYUeYmrRaRJSdyxgvbfSfoCMbi1/hx/D3v/yTQcULOCbbCyhDc7OGhkCVOG0BnQu7bGgFIscwNVxCowEsi6lhUlaI8JK52tdljVGginonUSHSvS2SxhJ9ANblv/IMOwMKKbVLCG08DXNYTKmS/S2zxNuYQTem75jHvi9pWANz6MS5hUPvC0z8ODdYBunnpIHJWWDg0r9i8Jq8EFFooaPn9BKsqQ5WKRIwrIsmyepjM4QH63xFxmKeYpLsPAf8K5Uk9/pPTTPp4JjUQ5ZXMdoUOQa6O/C8ewgj6sCs5efQSCbB77Sgw+ROTzredeOFUTP41SJpwPQV3LF0erBK5rUtb0DP3j7lNY3VTmsXcY48YSGk1j3KES9sAl1tFQVDiewPZo3zcj+UqZzv0AaitAT39A5NShIfRhM5dOMn9rYkNPOIzmvbrLtPKVQj3cT+/6XpA6jQd3efkC4rRl/c4CAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>remote_table_query</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ca71d6c183b0ae10cfbfc5a6feaad3fb^sys_idNOT IN5a711ac183b0ae10cfbfc5a6feaad320,5e711ac183b0ae10cfbfc5a6feaad31e,9a711ac183b0ae10cfbfc5a6feaad31f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Remote Table Record">fd16884253912110aba6ddeeff7b121e</action_type>
+        <action_type_parent display_value="Create Remote Table Record">0ae5444253912110aba6ddeeff7b12d8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>fd16884253912110aba6ddeeff7b121e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>165054e3-c530-4828-8d2b-11c44ceb2daa</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:35</sys_created_on>
+        <sys_id>5a711ac183b0ae10cfbfc5a6feaad320</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:44</sys_updated_on>
+        <ui_id>1cd7ab29-e6ae-4c1d-814c-161974b84559</ui_id>
+        <values>H4sIAAAAAAAA/+1Y32/bOAz+Vwo/x4bl2I7Tt0N7Awbs1rt17ctuZ8gWlQiTf8yS0/aC/O+jItvJZcV1cYMBA/KUiBQ/kZ9IQvSntSOYc+nwOYmTJAyi6ZwEhPg0ozFjAJzPMhIEgTNxSloA7tQ0k4DLFZWtWT+mIZnFhKSMrkClVeqnSqfVF03TVkGDO5lQtaRP953BDaou7qwqXwrJGiidy0+fJ05NGzxDo+ZyfaD6USclzUDueXngtH6qh2W61VnZu87so1FcvLeKqmHGFTJx4FFDyQB94FQqmDgFLRnVVfM0SBqg7KaUO8FSlBoRHbP5UYl/8dzEN/s4YFQ5WN2wTDuWrJhfU01vddPmum26rfmyEjkoywcDTlupr/ZldsNNrUVVWhMbtrWuZFuU7y0dzgDQXwpK8LZSBrUJ1HjehcFvl9XDh97LN6LcctIpZZVTOayo1o3IWm38WTut+PgM2Vb6LN0gocCT04LWtSgXad1UK7E9DZ0vvIXEhcdl9YBeKrEoPZqbSD28COq9Qfn1VnxPG2Fg/0CYbY614q4UX1t4a1Io9OM49yFzCYsiN0yyyJ1nPndnM8YDGiYzQufOZuKoJ3UlqVI7wvCm0q+tCdfS1xGVWq6NSd6IWv+GTq2g42Qz6cuL/W/mxrtM5QIkU3v1Jdjfre9P2XpN4siPQpi6eTT10fcgcRMWYCgkD8McsoBR6gkNhSfYZvOP0lS36nhja4cAOea0hhHHd4YIYa5oNQ5kMB1CyZe0XIyBsuZX1hzh8GK1rBaiPB7KmL4zpghTY348YJMY7VcPsPPM9KLjcYyVvXPjXluzcYwb4ztrbKJrKi6wcLlolDbJOSI+C+FtIUwl7cGaw16HahAOQIsqw596WZWvwLUgfxqQPWgFeYUFX1Ahx0NbkN8NyD4V41Jx4KFPxw7ulT5C550U5ReFYUs+onbTdGvuGXNvia3TthPTMAU2xrRBIlbQPGFHBWW6+Kgm08N538F5/Z/N5vsHyLmjnjvquaOeO+q5o47uqEfObS+/fvu5bXj+Hj6H+8kNCmzlGlL7PD6Y3jrlxX2n7Ca44GQTHHLp/0pDHB5+mhnukPaDOe6Q+J8yy82jiOI4F7vTPOZuSIPYzXLKXT/LfDKbBwmQZMQsJ8q61cqztL80100hTwIyp5jZ0y6z5wnEbEogJuHeXIdOYzWh0W6yW68/QFEha3YM/mu7g3j9zueeLj9icmRtvhxBX5vb0y7eXj8bVFefCtOnXBzU5W0v7OpxesIvKr9UOZ7sm8pA83/rcCD6p9RfEGURixh3szgz31KiyE2ShLk5jQhL8pDPfH7CbymfvwHL9E3CrBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:35</sys_created_on>
+        <sys_id>5e711ac183b0ae10cfbfc5a6feaad31e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:35</sys_updated_on>
+        <ui_id>04f9cb22-d46a-43f8-a945-0f2ed582d708</ui_id>
+        <values>H4sIAAAAAAAA/+VUUW/aMBD+K5GfAREo68rbBKs0qS1au7EHhiInuQRrjp3aDpSh/PedExMyijaQ+jBpUl7u83fxfXfnb7EjLCZjMgojP4yid6Oh3+8P8QsTP77x+zcQjd5fx9ekQwTNAJlcpgGHNXCE1pQXFmMikRjGTOecbucO/VSj0YrxWIEg48WyQ3Kq8D8GFBnvjo7OLYTTEG8fkztXxYnCzDa3ULSSLAIX37m0yR6UKrZl9DsEXgyIGPD+hHINHZJREVMj1bZBFNB4JvgBWDFh8G/Ekl80+4n3XfUtLwFUFEF91oSBa04NJ1Nq6JNRRWQK5ah1sRp7sWskdrvegxTgdbutbrdKLzsHrmv30Uwc028zv1ElmEhb5A0iB/KgTf6olFQtKrjYcYclTi6GhBbcTC5X4J+tYHCJguEFCq6sgrr5s9wwidtIfLszNOT70UheZOKh3jPS6J0frX+NTk++gkLjCkBu18zujVui5GklN4/7HblloqrIHXIZUd5E1BjFwsLY/u4IcMjwR0FG8xwbEeRKrlmVjMVmvZRj0Eu43OClmqWiRyMrrYdbTXu3iE8reE4VszLv8TeYXHaI3uoJp1ofxOIKB8+FraSW7jQEVaOqlEix3HzAC9bgyrXtr57zYPin5wyj359vBlrTFFqzWsx+GOp91aC09wiZNOBVc/GeC1DbpYc9SVNQHhN5YbTXrXGPxWNvt3MJX6qEz/Yg8HsVIWBxWX4XNbmxJP2XpAOxLF/b3b9c6mUefMbQ9m/rvpnYyTE6H9aovXqtbR9+2oN7K3gzHx6MRm9jxKes7bVZXOQV/58VLH8BTFbUPGQIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</action_type>
+        <action_type_parent display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>eafe820183b0ae10cfbfc5a6feaad378</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:35</sys_created_on>
+        <sys_id>9a711ac183b0ae10cfbfc5a6feaad31f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:35</sys_updated_on>
+        <ui_id>e91ce4b0-18ed-4352-aa47-f4ded24de449</ui_id>
+        <values>H4sIAAAAAAAA/41Sy27bMBD8F55lgbITS/CtSBCgQNsATZtLEAgrcmkToEiFDyeqkX/v0pLd1L30OMN9zMzy6cC0ZBuGa4XNklfNquOAFReqU+IaiAWQq7pjBbPQI1Ua3etIcA8mZbzknJDUYTAwPv5Fip020qNlm6fngg3gaUJEzzaHi6f/lWCgQ/NBw4WkOA4Zhui13c74y9zycCKdl1lCVTB8i2gl0m4FJmDBerASovMj20SfiPAI8t6a8Vyx0zbSMJZr34L+ResaznmuVEh2BE6vZ9jOwUy0uoUIpCSJmPxcKnZOCwxTEBIVJBNvPnJTwf0QtbNTS4TOnLqdSb39NuXAzgNOdyAmBRKBQ3aatc9G1MPOvX4/qbzT9hjK/GicAHNGECm6LsWs58CS/nGR8sT8kzMa7Glj28MwENMO3u31cQuJ7sutIVAq415JXdBbW4LIDku6AJR3xN8e6UfwOtv9SmOoOa/7afVLws/5z4hGiaZSqwXnV/Xial3LRbdu6kVVLzuQDRfyWrL3goUx3BgI4U9QdKH2JWWbU2xzQO2UcW4RXg/xE4na45zF+/NvV8Q1aC8DAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ca71d6c183b0ae10cfbfc5a6feaad3fb^sys_idNOT INda711ac183b0ae10cfbfc5a6feaad31d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e56f0e0183b0ae10cfbfc5a6feaad309</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Okta Users remote table query">ca71d6c183b0ae10cfbfc5a6feaad3fb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:35</sys_created_on>
+        <sys_id>da711ac183b0ae10cfbfc5a6feaad31d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 17:10:44</sys_updated_on>
+        <ui_id>165054e3-c530-4828-8d2b-11c44ceb2daa</ui_id>
+        <values>H4sIAAAAAAAA/51TwW6cMBD9F59ZBCzdBm5RokiR2kZKolyqCA32sGvV2NQ2u6GIf+94YUmUYy7APM97fm9sRmZ63/XePZtr5+Res/L3a8SkDhh9j0xDi6xk0mPrWMSOoPpQjyMWKce8TjbpFYpNvv2WbQDy75smFygyeuR5EfcOrZsmIgrpOgXDy1f5/CCVsLgY7MCSL4+WleOnJSlIPi1EU6RJwbfZbpslSXaVp/VuW6eZ2AKKHQkqqFFR6/2S7FNQP3ShtMiNFRfgx8J5XFF6BRNZEjF886jJOysbUA4j1oIW4I0dWOltT4BFEA9aDWvHQWpPciz0vjn5j3ZMkyQ0NkiBOM6La1ktU5zh5hY8PJE0971dWvnBSI5uHoXABnrlbz5ic8ND56XRM8VDrS5so/pW/5onwVaBy6ERQgdSCexC0GB9ydE8Hczp8eLyTurzUJZFZTiotQLvrax7H/yMDBW2JFS10HVS76vOmqM8k8lLG+8VFXGjzIk2DdczBh6MxzRXiO8Ivz3DL2BlSPGTZIg8RcwN7kaBc+9ZaIjV3z44mZMtGap5DIHCrez8NW1wxMXu9Bpu/Ky9zpRLRxaeA3Z/+U/CwkA3SPKP0MnYP8H8Ozb9BwVSxtNxAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ca71d6c183b0ae10cfbfc5a6feaad3fb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_id>5a711ac183b0ae10cfbfc5a6feaad309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_id</element>
+        <help/>
+        <hint/>
+        <label>Query ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ca71d6c183b0ae10cfbfc5a6feaad3fb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_id>92711ac183b0ae10cfbfc5a6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>table_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ca71d6c183b0ae10cfbfc5a6feaad3fb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:34</sys_created_on>
+        <sys_id>da711ac183b0ae10cfbfc5a6feaad316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ca71d6c183b0ae10cfbfc5a6feaad3fb"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>845bc2c98370ae10cfbfc5a6feaad33c</sys_id>
+        <latest_snapshot>ca71d6c183b0ae10cfbfc5a6feaad3fb</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=845bc2c98370ae10cfbfc5a6feaad33c^sys_idNOT IN62711ac183b0ae10cfbfc5a6feaad359"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>845bc2c98370ae10cfbfc5a6feaad33c</plan_id>
+        <snapshot>ca71d6c183b0ae10cfbfc5a6feaad3fb</snapshot>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:46:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>62711ac183b0ae10cfbfc5a6feaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:46:35</sys_updated_on>
+        <trigger display_value="">6a711ac183b0ae10cfbfc5a6feaad358</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=845bc2c98370ae10cfbfc5a6feaad33c"/>
+</record_update>

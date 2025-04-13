@@ -1,0 +1,2614 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>5b49f3c283e06a10cfbfc5a6feaad3eb</copied_from>
+        <copied_from_name>Simple test okta get user action</copied_from_name>
+        <description/>
+        <flow_priority/>
+        <ih_action>true</ih_action>
+        <internal_name>okta_get_users</internal_name>
+        <label_cache>[{"name":"{{action.limit}}","label":"action➛limit","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}","label":"step➛OpenAPI/Postman step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].response_stream}}","label":"step➛OpenAPI/Postman step➛Response Stream","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"visible_in_fd":"false"}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].response_body}}","label":"step➛OpenAPI/Postman step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_code}}","label":"step➛OpenAPI/Postman step➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].__step_status__}}","label":"step➛OpenAPI/Postman step➛Step Status","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].__step_status__.code}}","label":"step➛OpenAPI/Postman step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].__step_status__.message}}","label":"step➛OpenAPI/Postman step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[10dbcfd9-4202-4e87-a2a1-5261aeff5c01].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>eafe820183b0ae10cfbfc5a6feaad378</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Okta Get Users</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>611d0a4d8370ae10cfbfc5a6feaad39a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Okta Get Users</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_611d0a4d8370ae10cfbfc5a6feaad39a</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=611d0a4d8370ae10cfbfc5a6feaad39a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=611d0a4d8370ae10cfbfc5a6feaad39a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>611d0a4d8370ae10cfbfc5a6feaad39a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:26</sys_created_on>
+        <sys_id>311d0a4d8370ae10cfbfc5a6feaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:26</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">bd1d0a4d8370ae10cfbfc5a6feaad3d2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=611d0a4d8370ae10cfbfc5a6feaad39a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>users</field>
+        <id>611d0a4d8370ae10cfbfc5a6feaad39a</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:34:30</sys_created_on>
+        <sys_id>59be0ecd8370ae10cfbfc5a6feaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:34:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</table>
+        <value>{{step[10dbcfd9-4202-4e87-a2a1-5261aeff5c01].root.root_array}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>611d0a4d8370ae10cfbfc5a6feaad39a</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:26</sys_created_on>
+        <sys_id>bd1d4a4d8370ae10cfbfc5a6feaad311</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:34:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</table>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD211d0a4d1870ae104793cfd902289ccd":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{\\\"message\\\":\\\"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD211d0a4d1870ae104793cfd902289ccd.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"dff74fce-fdd0-44be-8ab1-841c2824ba85\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD211d0a4d1870ae104793cfd902289ccd\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>611d0a4d8370ae10cfbfc5a6feaad39a</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:26</sys_created_on>
+        <sys_id>bd1d0a4d8370ae10cfbfc5a6feaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:26</sys_updated_on>
+        <table>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=611d0a4d8370ae10cfbfc5a6feaad39a^sys_idNOT IN2d1d0a4d8370ae10cfbfc5a6feaad3b6,b93e02cd8370ae10cfbfc5a6feaad37f"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</action>
+        <cid>5ab27e8f-a527-4250-b083-7b2affa024b6</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>OpenAPI/Postman step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="OpenAPI/Postman">41ba6b7cc3a02110e6a899ccc840ddaa</step_type>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2d1d0a4d8370ae10cfbfc5a6feaad3b6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>211d0a4d8370ae10cfbfc5a6feaad3ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">156c7f30c3242110e6a899ccc840dd93</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>251d0a4d8370ae10cfbfc5a6feaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>api/v1/users</value>
+        <variable display_value="Resource Path">2d5d7f70c3242110e6a899ccc840ddf0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>291d0a4d8370ae10cfbfc5a6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>c4c496e783e8a610cfbfc5a6feaad37c</value>
+        <variable display_value="API Source">c1fee734c3e02110e6a899ccc840dde9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>611d0a4d8370ae10cfbfc5a6feaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>9079370683e06a10cfbfc5a6feaad3d8</value>
+        <variable display_value="Connection Alias">7a5277f4c3e02110e6a899ccc840dd95</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>6d1d0a4d8370ae10cfbfc5a6feaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>{"resource_path":"api/v1/users","body":"","query_params":{"limit":"{limit}"},"headers":{}}</value>
+        <variable display_value="OpenAPI Mappings">ccfb3b30c3242110e6a899ccc840dde5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>a91d0a4d8370ae10cfbfc5a6feaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>https://dev-13141697.okta.com/</value>
+        <variable display_value="Base URL">179fa374c3e02110e6a899ccc840dd66</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>65</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>ad1d0a4d8370ae10cfbfc5a6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">4a76c30643703110306861d048b8f280</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>e51d0a4d8370ae10cfbfc5a6feaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">5e433ff4c3e02110e6a899ccc840dd2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d1d0a4d8370ae10cfbfc5a6feaad3b6</document_key>
+        <order>16</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>e91d0a4d8370ae10cfbfc5a6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <value>94c4562b83e8a610cfbfc5a6feaad389</value>
+        <variable display_value="API Operation">d6ade3b0c3e02110e6a899ccc840dde6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2d1d0a4d8370ae10cfbfc5a6feaad3b6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_operation</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>ad1d0a4d8370ae10cfbfc5a6feaad3c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_source</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>e91d0a4d8370ae10cfbfc5a6feaad3c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>6d1d0a4d8370ae10cfbfc5a6feaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>251d0a4d8370ae10cfbfc5a6feaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>a91d0a4d8370ae10cfbfc5a6feaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>openapi_mappings</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>211d0a4d8370ae10cfbfc5a6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>e11d0a4d8370ae10cfbfc5a6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value>{"type":"ADV_NV","value":[{"name":"limit","value":"{{action.limit}}","attributes":{"omit_if_empty":false,"mandatory":true}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>e51d0a4d8370ae10cfbfc5a6feaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rest_metadata</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>a51d0a4d8370ae10cfbfc5a6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value>{"limit":{"name":"limit","allowEmptyValue":false,"allowReserved":false,"explode":false,"required":true,"style":"form","schema":{"glideType":"string","deprecated":false,"name":"limit5996403375","type":"string"},"label":"limit","value":"{{action.limit}}","referredIn":"query_params"}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>2d1d0a4d8370ae10cfbfc5a6feaad3b6</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>611d0a4d8370ae10cfbfc5a6feaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=2d1d0a4d8370ae10cfbfc5a6feaad3b6"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2d1d0a4d8370ae10cfbfc5a6feaad3b6"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2d1d0a4d8370ae10cfbfc5a6feaad3b6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2d1d0a4d8370ae10cfbfc5a6feaad3b6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</action>
+        <cid>10dbcfd9-4202-4e87-a2a1-5261aeff5c01</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:21</sys_created_on>
+        <sys_id>b93e02cd8370ae10cfbfc5a6feaad37f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b93e02cd8370ae10cfbfc5a6feaad37f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b93e02cd8370ae10cfbfc5a6feaad37f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:22</sys_created_on>
+        <sys_id>0a3e02cd8370ae10cfbfc5a6feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:22</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"root_array","children":[{"name":"root_array_object","children":[{"name":"id","children":[],"type":"string","jpath":"$.root_array[*].id","previewValue":"d7"},{"name":"status","children":[],"type":"string","jpath":"$.root_array[*].status","previewValue":"ACTIVE"},{"name":"created","children":[],"type":"string","jpath":"$.root_array[*].created","previewValue":"2022-01-06T22:14:56.000Z"},{"name":"activated","children":[],"type":"string","jpath":"$.root_array[*].activated","previewValue":"2022-01-06T22:16:55.000Z"},{"name":"statusChanged","children":[],"type":"string","jpath":"$.root_array[*].statusChanged","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"lastLogin","children":[],"type":"string","jpath":"$.root_array[*].lastLogin","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"lastUpdated","children":[],"type":"string","jpath":"$.root_array[*].lastUpdated","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"passwordChanged","children":[],"type":"string","jpath":"$.root_array[*].passwordChanged","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"type","children":[{"name":"id","children":[],"type":"string","jpath":"$.root_array[*].type.id","previewValue":"d7"}],"type":"object","jpath":"$.root_array[*].type","previewValue":""},{"name":"profile","children":[{"name":"firstName","children":[],"type":"string","jpath":"$.root_array[*].profile.firstName","previewValue":"x"},{"name":"lastName","children":[],"type":"string","jpath":"$.root_array[*].profile.lastName","previewValue":"x"},{"name":"mobilePhone","children":[],"type":"string","jpath":"$.root_array[*].profile.mobilePhone","previewValue":""},{"name":"secondEmail","children":[],"type":"string","jpath":"$.root_array[*].profile.secondEmail","previewValue":""},{"name":"login","children":[],"type":"string","jpath":"$.root_array[*].profile.login","previewValue":"example@gmail.com"},{"name":"email","children":[],"type":"string","jpath":"$.root_array[*].profile.email","previewValue":"example@gmail.com"}],"type":"object","jpath":"$.root_array[*].profile","previewValue":""},{"name":"credentials","children":[{"name":"password","children":[],"type":"object","jpath":"$.root_array[*].credentials.password","previewValue":""},{"name":"emails","children":[{"name":"emails_object","children":[{"name":"value","children":[],"type":"string","jpath":"$.root_array[*].credentials.emails[*].value","previewValue":"example@gmail.com"},{"name":"status","children":[],"type":"string","jpath":"$.root_array[*].credentials.emails[*].status","previewValue":"VERIFIED"},{"name":"type","children":[],"type":"string","jpath":"$.root_array[*].credentials.emails[*].type","previewValue":"PRIMARY"}],"type":"object","jpath":"$.root_array[*].credentials.emails[*]","previewValue":""}],"type":"array.object","jpath":"$.root_array[*].credentials.emails[*]","previewValue":""},{"name":"provider","children":[{"name":"type","children":[],"type":"string","jpath":"$.root_array[*].credentials.provider.type","previewValue":"OKTA"},{"name":"name","children":[],"type":"string","jpath":"$.root_array[*].credentials.provider.name","previewValue":"OKTA"}],"type":"object","jpath":"$.root_array[*].credentials.provider","previewValue":""},{"name":"recovery_question","children":[{"name":"question","children":[],"type":"string","jpath":"$.root_array[*].credentials.recovery_question.question","previewValue":""}],"type":"object","jpath":"$.root_array[*].credentials.recovery_question","previewValue":""}],"type":"object","jpath":"$.root_array[*].credentials","previewValue":""},{"name":"a__links","children":[{"name":"self","children":[{"name":"href","children":[],"type":"string","jpath":"$.root_array[*]._links.self.href","previewValue":"https://dev.okta.com/api/v1/users/7"}],"type":"object","jpath":"$.root_array[*]._links.self","previewValue":""}],"type":"object","jpath":"$.root_array[*]._links","previewValue":""}],"type":"object","jpath":"$.root_array[*]","previewValue":""}],"type":"array.object","jpath":"$.root_array[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b93e02cd8370ae10cfbfc5a6feaad37f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:22</sys_created_on>
+        <sys_id>ca3e02cd8370ae10cfbfc5a6feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:22</sys_updated_on>
+        <value>[&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "ACTIVE",&#13;
+        "created": "2022-01-06T22:14:56.000Z",&#13;
+        "activated": "2022-01-06T22:16:55.000Z",&#13;
+        "statusChanged": "2025-03-24T18:37:52.000Z",&#13;
+        "lastLogin": "2025-03-24T18:37:52.000Z",&#13;
+        "lastUpdated": "2025-03-24T18:37:52.000Z",&#13;
+        "passwordChanged": "2025-03-24T18:37:52.000Z",&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "x",&#13;
+            "lastName": "x",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example@gmail.com",&#13;
+            "email": "example@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "password": {},&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "STAGED",&#13;
+        "created": "2023-05-05T14:07:41.000Z",&#13;
+        "activated": null,&#13;
+        "statusChanged": null,&#13;
+        "lastLogin": null,&#13;
+        "lastUpdated": "2023-05-05T14:07:41.000Z",&#13;
+        "passwordChanged": null,&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "test",&#13;
+            "lastName": "user3",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example3@gmail.com",&#13;
+            "email": "example3@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example3@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/d7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "PROVISIONED",&#13;
+        "created": "2025-03-20T19:33:42.000Z",&#13;
+        "activated": "2025-03-24T18:31:51.000Z",&#13;
+        "statusChanged": "2025-03-24T18:31:51.000Z",&#13;
+        "lastLogin": null,&#13;
+        "lastUpdated": "2025-03-24T18:31:51.000Z",&#13;
+        "passwordChanged": null,&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "x",&#13;
+            "lastName": "x",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example@gmail.com",&#13;
+            "email": "example@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/d7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "ACTIVE",&#13;
+        "created": "2021-11-29T12:59:20.000Z",&#13;
+        "activated": null,&#13;
+        "statusChanged": "2023-05-05T14:04:44.000Z",&#13;
+        "lastLogin": "2025-03-24T19:43:30.000Z",&#13;
+        "lastUpdated": "2023-05-05T14:04:44.000Z",&#13;
+        "passwordChanged": "2023-05-05T14:04:44.000Z",&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "x",&#13;
+            "lastName": "xx",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example@gmail.com",&#13;
+            "email": "example@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "password": {},&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "recovery_question": {&#13;
+                "question": "cat"&#13;
+            },&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/5d7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "Ii5d7",&#13;
+        "status": "PASSWORD_EXPIRED",&#13;
+        "created": "2023-05-05T14:07:19.000Z",&#13;
+        "activated": "2023-10-09T18:35:52.000Z",&#13;
+        "statusChanged": "2025-03-24T18:35:44.000Z",&#13;
+        "lastLogin": "2023-10-09T19:04:40.000Z",&#13;
+        "lastUpdated": "2025-03-24T18:35:44.000Z",&#13;
+        "passwordChanged": "2025-03-24T18:35:44.000Z",&#13;
+        "type": {&#13;
+            "id": "RO05d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "Test",&#13;
+            "lastName": "User2",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example2@gmail.com",&#13;
+            "email": "example2@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "password": {},&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example2@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/d7"&#13;
+            }&#13;
+        }&#13;
+    }&#13;
+]</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_b93e02cd8370ae10cfbfc5a6feaad37f^id=b93e02cd8370ae10cfbfc5a6feaad37f"/>
+    <sys_element_mapping action="delete_multiple" query="id=b93e02cd8370ae10cfbfc5a6feaad37f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>b93e02cd8370ae10cfbfc5a6feaad37f</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:22</sys_created_on>
+        <sys_id>863e02cd8370ae10cfbfc5a6feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>b93e02cd8370ae10cfbfc5a6feaad37f</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:22</sys_created_on>
+        <sys_id>c23e02cd8370ae10cfbfc5a6feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>b93e02cd8370ae10cfbfc5a6feaad37f</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:22</sys_created_on>
+        <sys_id>023e02cd8370ae10cfbfc5a6feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=b93e02cd8370ae10cfbfc5a6feaad37f"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b93e02cd8370ae10cfbfc5a6feaad37f"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b93e02cd8370ae10cfbfc5a6feaad37f^sys_idNOT IN023e02cd8370ae10cfbfc5a6feaad384"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD423e02cd2070ae10e19fe1eafb8d3d83</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4e95778e83a06a10cfbfc5a6feaad30e</scope_name>
+        <serialized_content>{"FlowDesigner:FD423e02cd2070ae10e19fe1eafb8d3d83":{"root_array":[{"$8_root_array":{"lastLogin":"String","lastLogin.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastLogin\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"675dff18-ec93-41c1-841f-07e0c9aa8da8\"}"},"lastUpdated":"String","lastUpdated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastUpdated\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"a19abb02-7b80-4b27-b682-33035b6a9307\"}"},"passwordChanged":"String","passwordChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"passwordChanged\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"918b3d64-2fc6-4c2b-93c9-1e7de0188ec3\"}"},"credentials":{"emails":[{"$2_emails":{"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"d72a7672-8372-45ae-8bf3-735f9450ba15\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4cdb6f38-9643-404f-9197-f9400d772bb1\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a8afda72-8564-44aa-b84d-db8c39a5deb8\"}"}}}],"emails.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"emails\",\"mandatory\":\"false\",\"child_name\":\"emails_object\",\"uiUniqueId\":\"cf1b91d5-ea62-4d42-9115-617136078186\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"emails_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"6e5dc0a4-994e-440f-8c6f-b31f8cbdd927\"}"},"password":"Any","password.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"password\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e8e55b79-c385-44bc-94d8-9e3805e8f4fc\"}"},"provider":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f61c20e9-4337-498f-874a-cc2d89252765\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ad02b39a-4bff-4ff0-8b53-3b62f932f081\"}"}},"provider.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"provider\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4ea2cf03-f480-4216-b274-5272d2ac1334\"}"},"recovery_question":{"question":"String","question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"question\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ccf3ecd9-f937-4810-ab7d-bbb96a014779\"}"}},"recovery_question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"recovery_question\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"a96552e7-e7f4-461d-ab50-9f034668b98c\"}"}},"credentials.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"credentials\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"4580de1a-d9ed-434d-8b0c-d6725327124e\"}"},"created":"String","created.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"created\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b5e9a27a-2744-4a58-accc-a67a471971b7\"}"},"profile":{"firstName":"String","firstName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"firstName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"954f0f94-f122-487e-8e4e-85a49c379aed\"}"},"lastName":"String","lastName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastName\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"7282b82e-2b48-43a0-ae38-1fc94e304a9e\"}"},"mobilePhone":"String","mobilePhone.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"mobilePhone\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"7be9466f-0afc-46a2-a343-584daa8db035\"}"},"secondEmail":"String","secondEmail.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"secondEmail\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1292b26e-c551-43db-a700-4a5a59f36d3c\"}"},"login":"String","login.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"login\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"bc8c447d-88fb-4a79-bc00-ad8a9b1f9a8b\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"1ee82de9-58f8-4736-b318-289fb338e800\"}"}},"profile.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profile\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ce29611b-015a-477d-a757-f5214d65f0d2\"}"},"a__links":{"self":{"href":"String","href.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"href\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"c674b0a2-b489-4273-b3c2-f119e80fdd18\"}"}},"self.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"self\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ea09356f-67ff-453b-9591-6ccf72061bf6\"}"}},"a__links.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"a__links\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ea36cd47-0c5e-40fa-b270-88e869edf308\"}"},"statusChanged":"String","statusChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"statusChanged\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"950946a3-4a38-4606-9bd2-d727e7066baf\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"17648b04-7280-4b64-8291-8c26fda5d6e7\"}"},"type":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f69f8590-3ba2-4951-9a6c-407badcc913f\"}"}},"type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"94416f63-f6b4-4832-9075-faa27c519790\"}"},"activated":"String","activated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"activated\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"cbfdcc19-6817-4753-b60a-08bcdb2e54fb\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"e8d7faab-9b0f-4227-bb25-1a241623dd1d\"}"}}}],"root_array.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"root_array\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"1fd8bffd-6ef0-40a1-944f-8f466343aad5\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"e6031451-e858-4fc3-a435-86b16a40a16b\"}"}},"FlowDesigner:FD423e02cd2070ae10e19fe1eafb8d3d83.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"878ae774-c863-4645-bb99-ca37d01695c9\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD423e02cd2070ae10e19fe1eafb8d3d83\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>063e02cd8370ae10cfbfc5a6feaad383</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:39</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD423e02cd2070ae10e19fe1eafb8d3d83,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=878ae774-c863-4645-bb99-ca37d01695c9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">b93e02cd8370ae10cfbfc5a6feaad37f</model>
+        <model_id>b93e02cd8370ae10cfbfc5a6feaad37f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b93e02cd8370ae10cfbfc5a6feaad37f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:21</sys_created_on>
+        <sys_id>023e02cd8370ae10cfbfc5a6feaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b93e02cd8370ae10cfbfc5a6feaad37f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b93e02cd8370ae10cfbfc5a6feaad37f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:32:21</sys_created_on>
+        <sys_id>0a3e02cd8370ae10cfbfc5a6feaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:32:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=611d0a4d8370ae10cfbfc5a6feaad39a^sys_idNOT IN611d0a4d8370ae10cfbfc5a6feaad39f"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c8fc81f3-0047-467d-b687-172bad80cd5d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>limit</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>limit</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</model>
+        <model_id>611d0a4d8370ae10cfbfc5a6feaad39a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>611d0a4d8370ae10cfbfc5a6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=611d0a4d8370ae10cfbfc5a6feaad39f"/>
+    <sys_hub_action_output action="delete_multiple" query="model=611d0a4d8370ae10cfbfc5a6feaad39a^sys_idNOT IN1dbe0ecd8370ae10cfbfc5a6feaad308,b91d0a4d8370ae10cfbfc5a6feaad3ce,bd1d0a4d8370ae10cfbfc5a6feaad3d2"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD55be0ecd2870ae105bd92c37926ded07</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4e95778e83a06a10cfbfc5a6feaad30e</scope_name>
+        <serialized_content>{"FlowDesigner:FD55be0ecd2870ae105bd92c37926ded07":{"$COCollectionField":[{"root_array_object":{"lastLogin":"String","lastLogin.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastLogin\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"675dff18-ec93-41c1-841f-07e0c9aa8da8\"}"},"lastUpdated":"String","lastUpdated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastUpdated\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"a19abb02-7b80-4b27-b682-33035b6a9307\"}"},"passwordChanged":"String","passwordChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"passwordChanged\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"918b3d64-2fc6-4c2b-93c9-1e7de0188ec3\"}"},"credentials":{"emails":[{"$2_emails":{"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"d72a7672-8372-45ae-8bf3-735f9450ba15\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4cdb6f38-9643-404f-9197-f9400d772bb1\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a8afda72-8564-44aa-b84d-db8c39a5deb8\"}"}}}],"emails.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"emails\",\"mandatory\":\"false\",\"child_name\":\"emails_object\",\"uiUniqueId\":\"cf1b91d5-ea62-4d42-9115-617136078186\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"emails_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"6e5dc0a4-994e-440f-8c6f-b31f8cbdd927\"}"},"password":"Any","password.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"password\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e8e55b79-c385-44bc-94d8-9e3805e8f4fc\"}"},"provider":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f61c20e9-4337-498f-874a-cc2d89252765\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ad02b39a-4bff-4ff0-8b53-3b62f932f081\"}"}},"provider.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"provider\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4ea2cf03-f480-4216-b274-5272d2ac1334\"}"},"recovery_question":{"question":"String","question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"question\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ccf3ecd9-f937-4810-ab7d-bbb96a014779\"}"}},"recovery_question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"recovery_question\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"a96552e7-e7f4-461d-ab50-9f034668b98c\"}"}},"credentials.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"credentials\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"4580de1a-d9ed-434d-8b0c-d6725327124e\"}"},"created":"String","created.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"created\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b5e9a27a-2744-4a58-accc-a67a471971b7\"}"},"profile":{"firstName":"String","firstName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"firstName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"954f0f94-f122-487e-8e4e-85a49c379aed\"}"},"lastName":"String","lastName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastName\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"7282b82e-2b48-43a0-ae38-1fc94e304a9e\"}"},"mobilePhone":"String","mobilePhone.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"mobilePhone\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"7be9466f-0afc-46a2-a343-584daa8db035\"}"},"secondEmail":"String","secondEmail.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"secondEmail\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1292b26e-c551-43db-a700-4a5a59f36d3c\"}"},"login":"String","login.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"login\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"bc8c447d-88fb-4a79-bc00-ad8a9b1f9a8b\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"1ee82de9-58f8-4736-b318-289fb338e800\"}"}},"profile.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profile\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ce29611b-015a-477d-a757-f5214d65f0d2\"}"},"a__links":{"self":{"href":"String","href.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"href\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"c674b0a2-b489-4273-b3c2-f119e80fdd18\"}"}},"self.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"self\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ea09356f-67ff-453b-9591-6ccf72061bf6\"}"}},"a__links.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"a__links\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ea36cd47-0c5e-40fa-b270-88e869edf308\"}"},"statusChanged":"String","statusChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"statusChanged\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"950946a3-4a38-4606-9bd2-d727e7066baf\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"17648b04-7280-4b64-8291-8c26fda5d6e7\"}"},"type":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f69f8590-3ba2-4951-9a6c-407badcc913f\"}"}},"type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"94416f63-f6b4-4832-9075-faa27c519790\"}"},"activated":"String","activated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"activated\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"cbfdcc19-6817-4753-b60a-08bcdb2e54fb\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"e8d7faab-9b0f-4227-bb25-1a241623dd1d\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"10dbcfd9-4202-4e87-a2a1-5261aeff5c01\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Users\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"054ab052-6c2d-4e56-b40e-212bcc42062a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD55be0ecd2870ae105bd92c37926ded07\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"3090d676-908d-4ae3-be7b-368f1ccaf966\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"e6031451-e858-4fc3-a435-86b16a40a16b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD55be0ecd2870ae105bd92c37926ded07.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"10dbcfd9-4202-4e87-a2a1-5261aeff5c01\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Users\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"054ab052-6c2d-4e56-b40e-212bcc42062a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD55be0ecd2870ae105bd92c37926ded07\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"3090d676-908d-4ae3-be7b-368f1ccaf966\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"e6031451-e858-4fc3-a435-86b16a40a16b\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:34:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19be0ecd8370ae10cfbfc5a6feaad307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:39</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=root_array_object,child_name=root_array_object,child_type=object,child_type_label=Object,child_uiUniqueId=e6031451-e858-4fc3-a435-86b16a40a16b,co_type_name=FD55be0ecd2870ae105bd92c37926ded07,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=10dbcfd9-4202-4e87-a2a1-5261aeff5c01,sourceType=step,sourceUiUniqueId=3090d676-908d-4ae3-be7b-368f1ccaf966,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=054ab052-6c2d-4e56-b40e-212bcc42062a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>users</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Users</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</model>
+        <model_id>611d0a4d8370ae10cfbfc5a6feaad39a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:34:30</sys_created_on>
+        <sys_id>1dbe0ecd8370ae10cfbfc5a6feaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:34:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1dbe0ecd8370ae10cfbfc5a6feaad308"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1dbe0ecd8370ae10cfbfc5a6feaad308"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD211d0a4d1870ae104793cfd902289ccd</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4e95778e83a06a10cfbfc5a6feaad30e</scope_name>
+        <serialized_content>{"FlowDesigner:FD211d0a4d1870ae104793cfd902289ccd":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"mapped\":\"{\\\"message\\\":\\\"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD211d0a4d1870ae104793cfd902289ccd.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"dff74fce-fdd0-44be-8ab1-841c2824ba85\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD211d0a4d1870ae104793cfd902289ccd\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e11d0a4d8370ae10cfbfc5a6feaad3cd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:39</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD211d0a4d1870ae104793cfd902289ccd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=dff74fce-fdd0-44be-8ab1-841c2824ba85</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</model>
+        <model_id>611d0a4d8370ae10cfbfc5a6feaad39a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>b91d0a4d8370ae10cfbfc5a6feaad3ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:34:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b91d0a4d8370ae10cfbfc5a6feaad3ce"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b91d0a4d8370ae10cfbfc5a6feaad3ce"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=6b8e628a-60bb-498e-a2bf-7aa4d5d2a68a,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</model>
+        <model_id>611d0a4d8370ae10cfbfc5a6feaad39a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>bd1d0a4d8370ae10cfbfc5a6feaad3d2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bd1d0a4d8370ae10cfbfc5a6feaad3d2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bd1d0a4d8370ae10cfbfc5a6feaad3d2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=611d0a4d8370ae10cfbfc5a6feaad39a"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=611d0a4d8370ae10cfbfc5a6feaad39a^sys_idNOT INf91d0a4d8370ae10cfbfc5a6feaad3dd"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</action_type_id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:26</sys_created_on>
+        <sys_id>f91d0a4d8370ae10cfbfc5a6feaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:26</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=f91d0a4d8370ae10cfbfc5a6feaad3dd^sys_idNOT INbd1d0a4d8370ae10cfbfc5a6feaad3dd"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2025-04-07 09:27:26">f91d0a4d8370ae10cfbfc5a6feaad3dd</action_status_metadata_id>
+        <condition>{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_code}}!=0</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label>OpenAPI step execution has failed</label>
+        <order>1</order>
+        <status>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:26</sys_created_on>
+        <sys_id>bd1d0a4d8370ae10cfbfc5a6feaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:26</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>limit</element>
+        <help/>
+        <hint/>
+        <label>limit</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>a91d0a4d8370ae10cfbfc5a6feaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_611d0a4d8370ae10cfbfc5a6feaad39a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>391d0a4d8370ae10cfbfc5a6feaad3d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:27:25</sys_created_on>
+        <sys_id>711d0a4d8370ae10cfbfc5a6feaad3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:27:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>users</element>
+        <help/>
+        <hint/>
+        <label>Users</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:34:30</sys_created_on>
+        <sys_id>9dbe0ecd8370ae10cfbfc5a6feaad30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:34:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_611d0a4d8370ae10cfbfc5a6feaad39a"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=611d0a4d8370ae10cfbfc5a6feaad39a^sys_idNOT IN07fec20183b0ae10cfbfc5a6feaad326"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"07fec20183b0ae10cfbfc5a6feaad326","name":"plan","plan_signature":null}}</plan>
+        <snapshot>befe820183b0ae10cfbfc5a6feaad3be</snapshot>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>07fec20183b0ae10cfbfc5a6feaad326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:42</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>5b49f3c283e06a10cfbfc5a6feaad3eb</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>okta_get_users</internal_name>
+        <label_cache>[{"name":"{{action.limit}}","label":"action➛limit","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}","label":"step➛OpenAPI/Postman step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].response_stream}}","label":"step➛OpenAPI/Postman step➛Response Stream","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"visible_in_fd":"false"}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].response_body}}","label":"step➛OpenAPI/Postman step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_code}}","label":"step➛OpenAPI/Postman step➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].__step_status__}}","label":"step➛OpenAPI/Postman step➛Step Status","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].__step_status__.code}}","label":"step➛OpenAPI/Postman step➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].__step_status__.message}}","label":"step➛OpenAPI/Postman step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[10dbcfd9-4202-4e87-a2a1-5261aeff5c01].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Okta Get Users</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Okta Get Users">611d0a4d8370ae10cfbfc5a6feaad39a</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eafe820183b0ae10cfbfc5a6feaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=eafe820183b0ae10cfbfc5a6feaad378"/>
+    <sys_variable_value action="delete_multiple" query="document_key=eafe820183b0ae10cfbfc5a6feaad378"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>eafe820183b0ae10cfbfc5a6feaad378</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>3afe820183b0ae10cfbfc5a6feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">3efe820183b0ae10cfbfc5a6feaad3b2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=eafe820183b0ae10cfbfc5a6feaad378"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>users</field>
+        <id>eafe820183b0ae10cfbfc5a6feaad378</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>f2fe820183b0ae10cfbfc5a6feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</table>
+        <value>{{step[10dbcfd9-4202-4e87-a2a1-5261aeff5c01].root.root_array}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>eafe820183b0ae10cfbfc5a6feaad378</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>b6fe820183b0ae10cfbfc5a6feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</table>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>eafe820183b0ae10cfbfc5a6feaad378</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>32fe820183b0ae10cfbfc5a6feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=eafe820183b0ae10cfbfc5a6feaad378^sys_idNOT IN62fe820183b0ae10cfbfc5a6feaad39b,6efe820183b0ae10cfbfc5a6feaad384"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</action>
+        <cid>10dbcfd9-4202-4e87-a2a1-5261aeff5c01</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>62fe820183b0ae10cfbfc5a6feaad39b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=62fe820183b0ae10cfbfc5a6feaad39b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>62fe820183b0ae10cfbfc5a6feaad39b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>66fe820183b0ae10cfbfc5a6feaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <value>[&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "ACTIVE",&#13;
+        "created": "2022-01-06T22:14:56.000Z",&#13;
+        "activated": "2022-01-06T22:16:55.000Z",&#13;
+        "statusChanged": "2025-03-24T18:37:52.000Z",&#13;
+        "lastLogin": "2025-03-24T18:37:52.000Z",&#13;
+        "lastUpdated": "2025-03-24T18:37:52.000Z",&#13;
+        "passwordChanged": "2025-03-24T18:37:52.000Z",&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "x",&#13;
+            "lastName": "x",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example@gmail.com",&#13;
+            "email": "example@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "password": {},&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "STAGED",&#13;
+        "created": "2023-05-05T14:07:41.000Z",&#13;
+        "activated": null,&#13;
+        "statusChanged": null,&#13;
+        "lastLogin": null,&#13;
+        "lastUpdated": "2023-05-05T14:07:41.000Z",&#13;
+        "passwordChanged": null,&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "test",&#13;
+            "lastName": "user3",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example3@gmail.com",&#13;
+            "email": "example3@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example3@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/d7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "PROVISIONED",&#13;
+        "created": "2025-03-20T19:33:42.000Z",&#13;
+        "activated": "2025-03-24T18:31:51.000Z",&#13;
+        "statusChanged": "2025-03-24T18:31:51.000Z",&#13;
+        "lastLogin": null,&#13;
+        "lastUpdated": "2025-03-24T18:31:51.000Z",&#13;
+        "passwordChanged": null,&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "x",&#13;
+            "lastName": "x",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example@gmail.com",&#13;
+            "email": "example@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/d7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "d7",&#13;
+        "status": "ACTIVE",&#13;
+        "created": "2021-11-29T12:59:20.000Z",&#13;
+        "activated": null,&#13;
+        "statusChanged": "2023-05-05T14:04:44.000Z",&#13;
+        "lastLogin": "2025-03-24T19:43:30.000Z",&#13;
+        "lastUpdated": "2023-05-05T14:04:44.000Z",&#13;
+        "passwordChanged": "2023-05-05T14:04:44.000Z",&#13;
+        "type": {&#13;
+            "id": "d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "x",&#13;
+            "lastName": "xx",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example@gmail.com",&#13;
+            "email": "example@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "password": {},&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "recovery_question": {&#13;
+                "question": "cat"&#13;
+            },&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/5d7"&#13;
+            }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "id": "Ii5d7",&#13;
+        "status": "PASSWORD_EXPIRED",&#13;
+        "created": "2023-05-05T14:07:19.000Z",&#13;
+        "activated": "2023-10-09T18:35:52.000Z",&#13;
+        "statusChanged": "2025-03-24T18:35:44.000Z",&#13;
+        "lastLogin": "2023-10-09T19:04:40.000Z",&#13;
+        "lastUpdated": "2025-03-24T18:35:44.000Z",&#13;
+        "passwordChanged": "2025-03-24T18:35:44.000Z",&#13;
+        "type": {&#13;
+            "id": "RO05d7"&#13;
+        },&#13;
+        "profile": {&#13;
+            "firstName": "Test",&#13;
+            "lastName": "User2",&#13;
+            "mobilePhone": null,&#13;
+            "secondEmail": null,&#13;
+            "login": "example2@gmail.com",&#13;
+            "email": "example2@gmail.com"&#13;
+        },&#13;
+        "credentials": {&#13;
+            "password": {},&#13;
+            "emails": [&#13;
+                {&#13;
+                    "value": "example2@gmail.com",&#13;
+                    "status": "VERIFIED",&#13;
+                    "type": "PRIMARY"&#13;
+                }&#13;
+            ],&#13;
+            "provider": {&#13;
+                "type": "OKTA",&#13;
+                "name": "OKTA"&#13;
+            }&#13;
+        },&#13;
+        "_links": {&#13;
+            "self": {&#13;
+                "href": "https://dev.okta.com/api/v1/users/d7"&#13;
+            }&#13;
+        }&#13;
+    }&#13;
+]</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>62fe820183b0ae10cfbfc5a6feaad39b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>a2fe820183b0ae10cfbfc5a6feaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"root_array","children":[{"name":"root_array_object","children":[{"name":"id","children":[],"type":"string","jpath":"$.root_array[*].id","previewValue":"d7"},{"name":"status","children":[],"type":"string","jpath":"$.root_array[*].status","previewValue":"ACTIVE"},{"name":"created","children":[],"type":"string","jpath":"$.root_array[*].created","previewValue":"2022-01-06T22:14:56.000Z"},{"name":"activated","children":[],"type":"string","jpath":"$.root_array[*].activated","previewValue":"2022-01-06T22:16:55.000Z"},{"name":"statusChanged","children":[],"type":"string","jpath":"$.root_array[*].statusChanged","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"lastLogin","children":[],"type":"string","jpath":"$.root_array[*].lastLogin","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"lastUpdated","children":[],"type":"string","jpath":"$.root_array[*].lastUpdated","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"passwordChanged","children":[],"type":"string","jpath":"$.root_array[*].passwordChanged","previewValue":"2025-03-24T18:37:52.000Z"},{"name":"type","children":[{"name":"id","children":[],"type":"string","jpath":"$.root_array[*].type.id","previewValue":"d7"}],"type":"object","jpath":"$.root_array[*].type","previewValue":""},{"name":"profile","children":[{"name":"firstName","children":[],"type":"string","jpath":"$.root_array[*].profile.firstName","previewValue":"x"},{"name":"lastName","children":[],"type":"string","jpath":"$.root_array[*].profile.lastName","previewValue":"x"},{"name":"mobilePhone","children":[],"type":"string","jpath":"$.root_array[*].profile.mobilePhone","previewValue":""},{"name":"secondEmail","children":[],"type":"string","jpath":"$.root_array[*].profile.secondEmail","previewValue":""},{"name":"login","children":[],"type":"string","jpath":"$.root_array[*].profile.login","previewValue":"example@gmail.com"},{"name":"email","children":[],"type":"string","jpath":"$.root_array[*].profile.email","previewValue":"example@gmail.com"}],"type":"object","jpath":"$.root_array[*].profile","previewValue":""},{"name":"credentials","children":[{"name":"password","children":[],"type":"object","jpath":"$.root_array[*].credentials.password","previewValue":""},{"name":"emails","children":[{"name":"emails_object","children":[{"name":"value","children":[],"type":"string","jpath":"$.root_array[*].credentials.emails[*].value","previewValue":"example@gmail.com"},{"name":"status","children":[],"type":"string","jpath":"$.root_array[*].credentials.emails[*].status","previewValue":"VERIFIED"},{"name":"type","children":[],"type":"string","jpath":"$.root_array[*].credentials.emails[*].type","previewValue":"PRIMARY"}],"type":"object","jpath":"$.root_array[*].credentials.emails[*]","previewValue":""}],"type":"array.object","jpath":"$.root_array[*].credentials.emails[*]","previewValue":""},{"name":"provider","children":[{"name":"type","children":[],"type":"string","jpath":"$.root_array[*].credentials.provider.type","previewValue":"OKTA"},{"name":"name","children":[],"type":"string","jpath":"$.root_array[*].credentials.provider.name","previewValue":"OKTA"}],"type":"object","jpath":"$.root_array[*].credentials.provider","previewValue":""},{"name":"recovery_question","children":[{"name":"question","children":[],"type":"string","jpath":"$.root_array[*].credentials.recovery_question.question","previewValue":""}],"type":"object","jpath":"$.root_array[*].credentials.recovery_question","previewValue":""}],"type":"object","jpath":"$.root_array[*].credentials","previewValue":""},{"name":"a__links","children":[{"name":"self","children":[{"name":"href","children":[],"type":"string","jpath":"$.root_array[*]._links.self.href","previewValue":"https://dev.okta.com/api/v1/users/7"}],"type":"object","jpath":"$.root_array[*]._links.self","previewValue":""}],"type":"object","jpath":"$.root_array[*]._links","previewValue":""}],"type":"object","jpath":"$.root_array[*]","previewValue":""}],"type":"array.object","jpath":"$.root_array[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_62fe820183b0ae10cfbfc5a6feaad39b^id=62fe820183b0ae10cfbfc5a6feaad39b"/>
+    <sys_element_mapping action="delete_multiple" query="id=62fe820183b0ae10cfbfc5a6feaad39b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>62fe820183b0ae10cfbfc5a6feaad39b</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>22fe820183b0ae10cfbfc5a6feaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>62fe820183b0ae10cfbfc5a6feaad39b</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>6efe820183b0ae10cfbfc5a6feaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>62fe820183b0ae10cfbfc5a6feaad39b</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>aafe820183b0ae10cfbfc5a6feaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=62fe820183b0ae10cfbfc5a6feaad39b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=62fe820183b0ae10cfbfc5a6feaad39b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=62fe820183b0ae10cfbfc5a6feaad39b^sys_idNOT IN6efe820183b0ae10cfbfc5a6feaad39e"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDeefe8201fab0ae10a05a1e922e42279d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4e95778e83a06a10cfbfc5a6feaad30e</scope_name>
+        <serialized_content>{"FlowDesigner:FDeefe8201fab0ae10a05a1e922e42279d":{"root_array":[{"$8_root_array":{"lastLogin":"String","lastLogin.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastLogin\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"675dff18-ec93-41c1-841f-07e0c9aa8da8\"}"},"lastUpdated":"String","lastUpdated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastUpdated\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"a19abb02-7b80-4b27-b682-33035b6a9307\"}"},"passwordChanged":"String","passwordChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"passwordChanged\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"918b3d64-2fc6-4c2b-93c9-1e7de0188ec3\"}"},"credentials":{"emails":[{"$2_emails":{"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"d72a7672-8372-45ae-8bf3-735f9450ba15\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4cdb6f38-9643-404f-9197-f9400d772bb1\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a8afda72-8564-44aa-b84d-db8c39a5deb8\"}"}}}],"emails.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"emails\",\"mandatory\":\"false\",\"child_name\":\"emails_object\",\"uiUniqueId\":\"cf1b91d5-ea62-4d42-9115-617136078186\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"emails_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"6e5dc0a4-994e-440f-8c6f-b31f8cbdd927\"}"},"password":"Any","password.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"password\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e8e55b79-c385-44bc-94d8-9e3805e8f4fc\"}"},"provider":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f61c20e9-4337-498f-874a-cc2d89252765\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ad02b39a-4bff-4ff0-8b53-3b62f932f081\"}"}},"provider.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"provider\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4ea2cf03-f480-4216-b274-5272d2ac1334\"}"},"recovery_question":{"question":"String","question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"question\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ccf3ecd9-f937-4810-ab7d-bbb96a014779\"}"}},"recovery_question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"recovery_question\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"a96552e7-e7f4-461d-ab50-9f034668b98c\"}"}},"credentials.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"credentials\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"4580de1a-d9ed-434d-8b0c-d6725327124e\"}"},"created":"String","created.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"created\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b5e9a27a-2744-4a58-accc-a67a471971b7\"}"},"profile":{"firstName":"String","firstName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"firstName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"954f0f94-f122-487e-8e4e-85a49c379aed\"}"},"lastName":"String","lastName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastName\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"7282b82e-2b48-43a0-ae38-1fc94e304a9e\"}"},"mobilePhone":"String","mobilePhone.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"mobilePhone\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"7be9466f-0afc-46a2-a343-584daa8db035\"}"},"secondEmail":"String","secondEmail.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"secondEmail\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1292b26e-c551-43db-a700-4a5a59f36d3c\"}"},"login":"String","login.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"login\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"bc8c447d-88fb-4a79-bc00-ad8a9b1f9a8b\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"1ee82de9-58f8-4736-b318-289fb338e800\"}"}},"profile.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profile\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ce29611b-015a-477d-a757-f5214d65f0d2\"}"},"a__links":{"self":{"href":"String","href.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"href\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"c674b0a2-b489-4273-b3c2-f119e80fdd18\"}"}},"self.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"self\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ea09356f-67ff-453b-9591-6ccf72061bf6\"}"}},"a__links.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"a__links\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ea36cd47-0c5e-40fa-b270-88e869edf308\"}"},"statusChanged":"String","statusChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"statusChanged\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"950946a3-4a38-4606-9bd2-d727e7066baf\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"17648b04-7280-4b64-8291-8c26fda5d6e7\"}"},"type":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f69f8590-3ba2-4951-9a6c-407badcc913f\"}"}},"type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"94416f63-f6b4-4832-9075-faa27c519790\"}"},"activated":"String","activated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"activated\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"cbfdcc19-6817-4753-b60a-08bcdb2e54fb\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"e8d7faab-9b0f-4227-bb25-1a241623dd1d\"}"}}}],"root_array.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"root_array\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"1fd8bffd-6ef0-40a1-944f-8f466343aad5\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"e6031451-e858-4fc3-a435-86b16a40a16b\"}"}},"FlowDesigner:FDeefe8201fab0ae10a05a1e922e42279d.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"878ae774-c863-4645-bb99-ca37d01695c9\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDeefe8201fab0ae10a05a1e922e42279d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2fe820183b0ae10cfbfc5a6feaad39e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDeefe8201fab0ae10a05a1e922e42279d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=878ae774-c863-4645-bb99-ca37d01695c9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">62fe820183b0ae10cfbfc5a6feaad39b</model>
+        <model_id>62fe820183b0ae10cfbfc5a6feaad39b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_62fe820183b0ae10cfbfc5a6feaad39b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>6efe820183b0ae10cfbfc5a6feaad39e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=62fe820183b0ae10cfbfc5a6feaad39b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_62fe820183b0ae10cfbfc5a6feaad39b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>2efe820183b0ae10cfbfc5a6feaad3a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</action>
+        <cid>5ab27e8f-a527-4250-b083-7b2affa024b6</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>OpenAPI/Postman step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="OpenAPI/Postman">41ba6b7cc3a02110e6a899ccc840ddaa</step_type>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>6efe820183b0ae10cfbfc5a6feaad384</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6efe820183b0ae10cfbfc5a6feaad384"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>2afe820183b0ae10cfbfc5a6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">5e433ff4c3e02110e6a899ccc840dd2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>16</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>2efe820183b0ae10cfbfc5a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>94c4562b83e8a610cfbfc5a6feaad389</value>
+        <variable display_value="API Operation">d6ade3b0c3e02110e6a899ccc840dde6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>62fe820183b0ae10cfbfc5a6feaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">156c7f30c3242110e6a899ccc840dd93</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>66fe820183b0ae10cfbfc5a6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>api/v1/users</value>
+        <variable display_value="Resource Path">2d5d7f70c3242110e6a899ccc840ddf0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>6afe820183b0ae10cfbfc5a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>c4c496e783e8a610cfbfc5a6feaad37c</value>
+        <variable display_value="API Source">c1fee734c3e02110e6a899ccc840dde9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>a2fe820183b0ae10cfbfc5a6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>9079370683e06a10cfbfc5a6feaad3d8</value>
+        <variable display_value="Connection Alias">7a5277f4c3e02110e6a899ccc840dd95</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>aefe820183b0ae10cfbfc5a6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>{"resource_path":"api/v1/users","body":"","query_params":{"limit":"{limit}"},"headers":{}}</value>
+        <variable display_value="OpenAPI Mappings">ccfb3b30c3242110e6a899ccc840dde5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>eafe820183b0ae10cfbfc5a6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>https://dev-13141697.okta.com/</value>
+        <variable display_value="Base URL">179fa374c3e02110e6a899ccc840dd66</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6efe820183b0ae10cfbfc5a6feaad384</document_key>
+        <order>65</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>eefe820183b0ae10cfbfc5a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">4a76c30643703110306861d048b8f280</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6efe820183b0ae10cfbfc5a6feaad384"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_operation</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>eefe820183b0ae10cfbfc5a6feaad394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>api_source</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>2efe820183b0ae10cfbfc5a6feaad394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>aefe820183b0ae10cfbfc5a6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>66fe820183b0ae10cfbfc5a6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>eafe820183b0ae10cfbfc5a6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>openapi_mappings</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>62fe820183b0ae10cfbfc5a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>26fe820183b0ae10cfbfc5a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value>{"type":"ADV_NV","value":[{"name":"limit","value":"{{action.limit}}","attributes":{"omit_if_empty":false,"mandatory":true}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>2afe820183b0ae10cfbfc5a6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>rest_metadata</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>e6fe820183b0ae10cfbfc5a6feaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value>{"limit":{"name":"limit","allowEmptyValue":false,"allowReserved":false,"explode":false,"required":true,"style":"form","schema":{"glideType":"string","deprecated":false,"name":"limit5996403375","type":"string"},"label":"limit","value":"{{action.limit}}","referredIn":"query_params"}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>6efe820183b0ae10cfbfc5a6feaad384</id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>a2fe820183b0ae10cfbfc5a6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=6efe820183b0ae10cfbfc5a6feaad384"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=6efe820183b0ae10cfbfc5a6feaad384"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=6efe820183b0ae10cfbfc5a6feaad384"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6efe820183b0ae10cfbfc5a6feaad384"/>
+    <sys_hub_action_input action="delete_multiple" query="model=eafe820183b0ae10cfbfc5a6feaad378^sys_idNOT INe6fe820183b0ae10cfbfc5a6feaad37b"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c8fc81f3-0047-467d-b687-172bad80cd5d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>limit</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>limit</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</model>
+        <model_id>eafe820183b0ae10cfbfc5a6feaad378</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>e6fe820183b0ae10cfbfc5a6feaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e6fe820183b0ae10cfbfc5a6feaad37b"/>
+    <sys_hub_action_output action="delete_multiple" query="model=eafe820183b0ae10cfbfc5a6feaad378^sys_idNOT IN3efe820183b0ae10cfbfc5a6feaad3b2,62fe820183b0ae10cfbfc5a6feaad3aa,aefe820183b0ae10cfbfc5a6feaad3ae"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=6b8e628a-60bb-498e-a2bf-7aa4d5d2a68a,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</model>
+        <model_id>eafe820183b0ae10cfbfc5a6feaad378</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>3efe820183b0ae10cfbfc5a6feaad3b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3efe820183b0ae10cfbfc5a6feaad3b2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3efe820183b0ae10cfbfc5a6feaad3b2"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDe2fe82010fb0ae10d23b9b56f99fdba9</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4e95778e83a06a10cfbfc5a6feaad30e</scope_name>
+        <serialized_content>{"FlowDesigner:FDe2fe82010fb0ae10d23b9b56f99fdba9":{"$COCollectionField":[{"root_array_object":{"lastLogin":"String","lastLogin.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastLogin\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"675dff18-ec93-41c1-841f-07e0c9aa8da8\"}"},"lastUpdated":"String","lastUpdated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastUpdated\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"a19abb02-7b80-4b27-b682-33035b6a9307\"}"},"passwordChanged":"String","passwordChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"passwordChanged\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"918b3d64-2fc6-4c2b-93c9-1e7de0188ec3\"}"},"credentials":{"emails":[{"$2_emails":{"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"d72a7672-8372-45ae-8bf3-735f9450ba15\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4cdb6f38-9643-404f-9197-f9400d772bb1\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"a8afda72-8564-44aa-b84d-db8c39a5deb8\"}"}}}],"emails.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"emails\",\"mandatory\":\"false\",\"child_name\":\"emails_object\",\"uiUniqueId\":\"cf1b91d5-ea62-4d42-9115-617136078186\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"emails_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"6e5dc0a4-994e-440f-8c6f-b31f8cbdd927\"}"},"password":"Any","password.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"password\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e8e55b79-c385-44bc-94d8-9e3805e8f4fc\"}"},"provider":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f61c20e9-4337-498f-874a-cc2d89252765\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ad02b39a-4bff-4ff0-8b53-3b62f932f081\"}"}},"provider.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"provider\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"4ea2cf03-f480-4216-b274-5272d2ac1334\"}"},"recovery_question":{"question":"String","question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"question\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ccf3ecd9-f937-4810-ab7d-bbb96a014779\"}"}},"recovery_question.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"recovery_question\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"a96552e7-e7f4-461d-ab50-9f034668b98c\"}"}},"credentials.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"credentials\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"4580de1a-d9ed-434d-8b0c-d6725327124e\"}"},"created":"String","created.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"created\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b5e9a27a-2744-4a58-accc-a67a471971b7\"}"},"profile":{"firstName":"String","firstName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"firstName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"954f0f94-f122-487e-8e4e-85a49c379aed\"}"},"lastName":"String","lastName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastName\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"7282b82e-2b48-43a0-ae38-1fc94e304a9e\"}"},"mobilePhone":"String","mobilePhone.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"mobilePhone\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"7be9466f-0afc-46a2-a343-584daa8db035\"}"},"secondEmail":"String","secondEmail.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"secondEmail\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1292b26e-c551-43db-a700-4a5a59f36d3c\"}"},"login":"String","login.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"login\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"bc8c447d-88fb-4a79-bc00-ad8a9b1f9a8b\"}"},"email":"String","email.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"email\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"1ee82de9-58f8-4736-b318-289fb338e800\"}"}},"profile.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profile\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ce29611b-015a-477d-a757-f5214d65f0d2\"}"},"a__links":{"self":{"href":"String","href.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"href\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"c674b0a2-b489-4273-b3c2-f119e80fdd18\"}"}},"self.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"self\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ea09356f-67ff-453b-9591-6ccf72061bf6\"}"}},"a__links.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"a__links\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ea36cd47-0c5e-40fa-b270-88e869edf308\"}"},"statusChanged":"String","statusChanged.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"statusChanged\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"950946a3-4a38-4606-9bd2-d727e7066baf\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"17648b04-7280-4b64-8291-8c26fda5d6e7\"}"},"type":{"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f69f8590-3ba2-4951-9a6c-407badcc913f\"}"}},"type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"94416f63-f6b4-4832-9075-faa27c519790\"}"},"activated":"String","activated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"activated\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"cbfdcc19-6817-4753-b60a-08bcdb2e54fb\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"e8d7faab-9b0f-4227-bb25-1a241623dd1d\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"10dbcfd9-4202-4e87-a2a1-5261aeff5c01\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Users\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"054ab052-6c2d-4e56-b40e-212bcc42062a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe2fe82010fb0ae10d23b9b56f99fdba9\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"3090d676-908d-4ae3-be7b-368f1ccaf966\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"e6031451-e858-4fc3-a435-86b16a40a16b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDe2fe82010fb0ae10d23b9b56f99fdba9.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"10dbcfd9-4202-4e87-a2a1-5261aeff5c01\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Users\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"054ab052-6c2d-4e56-b40e-212bcc42062a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe2fe82010fb0ae10d23b9b56f99fdba9\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"3090d676-908d-4ae3-be7b-368f1ccaf966\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"e6031451-e858-4fc3-a435-86b16a40a16b\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a6fe820183b0ae10cfbfc5a6feaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=root_array_object,child_name=root_array_object,child_type=object,child_type_label=Object,child_uiUniqueId=e6031451-e858-4fc3-a435-86b16a40a16b,co_type_name=FDe2fe82010fb0ae10d23b9b56f99fdba9,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=10dbcfd9-4202-4e87-a2a1-5261aeff5c01,sourceType=step,sourceUiUniqueId=3090d676-908d-4ae3-be7b-368f1ccaf966,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=054ab052-6c2d-4e56-b40e-212bcc42062a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>users</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Users</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</model>
+        <model_id>eafe820183b0ae10cfbfc5a6feaad378</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>62fe820183b0ae10cfbfc5a6feaad3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=62fe820183b0ae10cfbfc5a6feaad3aa"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=62fe820183b0ae10cfbfc5a6feaad3aa"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=dff74fce-fdd0-44be-8ab1-841c2824ba85</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</model>
+        <model_id>eafe820183b0ae10cfbfc5a6feaad378</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>aefe820183b0ae10cfbfc5a6feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aefe820183b0ae10cfbfc5a6feaad3ae"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aefe820183b0ae10cfbfc5a6feaad3ae"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=eafe820183b0ae10cfbfc5a6feaad378"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=eafe820183b0ae10cfbfc5a6feaad378^sys_idNOT IN7afe820183b0ae10cfbfc5a6feaad3be"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Okta Get Users">eafe820183b0ae10cfbfc5a6feaad378</action_type_id>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>7afe820183b0ae10cfbfc5a6feaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=7afe820183b0ae10cfbfc5a6feaad3be^sys_idNOT IN3efe820183b0ae10cfbfc5a6feaad3be"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 2025-04-07 09:35:41">7afe820183b0ae10cfbfc5a6feaad3be</action_status_metadata_id>
+        <condition>{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_code}}!=0</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label>OpenAPI step execution has failed</label>
+        <order>1</order>
+        <status>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>3efe820183b0ae10cfbfc5a6feaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>limit</element>
+        <help/>
+        <hint/>
+        <label>limit</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:40</sys_created_on>
+        <sys_id>22fe820183b0ae10cfbfc5a6feaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_eafe820183b0ae10cfbfc5a6feaad378"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>3afe820183b0ae10cfbfc5a6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>users</element>
+        <help/>
+        <hint/>
+        <label>Users</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>62fe820183b0ae10cfbfc5a6feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 16:35:41</sys_created_on>
+        <sys_id>eefe820183b0ae10cfbfc5a6feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-07 16:35:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_eafe820183b0ae10cfbfc5a6feaad378"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>611d0a4d8370ae10cfbfc5a6feaad39a</sys_id>
+        <latest_snapshot>eafe820183b0ae10cfbfc5a6feaad378</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

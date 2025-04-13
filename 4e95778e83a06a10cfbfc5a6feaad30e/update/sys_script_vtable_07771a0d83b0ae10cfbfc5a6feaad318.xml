@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <cache_isolation_level>SYSTEM</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl/>
+        <delete_script><![CDATA[(function executeDelete(v_record) {
+     // Parameters:
+     //      v_record - a map of field names and values containing (among others) the
+     //              sys_id of the record that needs to be deleted on the remote system
+     //          v_record.<field_name>                  - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record);]]></delete_script>
+        <editable>false</editable>
+        <enhanced_capacity>false</enhanced_capacity>
+        <flow/>
+        <insert_script><![CDATA[(function executeInsert(v_record) {
+     // Parameters:
+     //      v_record is a map of field names and values containing the sys_id of the
+     //              record and the fields that need to be inserted in the record on the
+     //              remote system (source of data)
+     
+     //          v_record.<field_name>                   - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record);]]></insert_script>
+        <name>Okta Users remote table def</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+    /*
+    // Parameters:
+    //      v_table - object to record response:
+    //          v_table.addRow({ ... })                - adds a row to the result set.
+    //              keys are the column names of the table definition.
+    //              sys_id must be non-empty and uniquely identify each row.
+    //                  the above rule will be strictly enforced for editable tables, and generate warnings for read-only tables.
+    //                  sys_id will be supplied to the Update, and Delete scripts to specify the row's identity.
+
+    //      v_query - the query definition:
+    //          v_query.getEncodedQuery()              - encoded querystring
+    //          v_query.getCondition(field)            - encoded querystring for the given field (includes field name, operator, and value)
+    //          v_query.getParameter(field)            - parameter for the given field (only includes value for equality conditions)
+    //          v_query.isGet()                        - whether the query is a single get by sys_id
+    //          v_query.getSysId()                     - parameter for sys_id field
+    //          v_query.isTextSearch()                 - whether the query contains a text query parameter
+    //          v_query.getTextSearch()                - text search query parameter (internal field name 123TEXTQUERY321)
+    //          v_query.getFirstRowWanted()            - the first row to include, don't use with caching
+    //          v_query.getLastRowWanted()             - the last row to include, don't use with caching
+    //          v_query.setLastErrorMessage(message)   - the message is visible from GlideRecord.getLastErrorMessage()
+
+    // Sample code:
+    //  try {
+    //      retrieve-rows-from-external-system;     //      if (there-was-an-error) {
+    //          var message = ...;     //          v_query.setLastErrorMessage(message);
+    //          return;
+    //      }
+    //
+    //      for (var row in rows) {
+    //          v_table.addRow(row);
+    //      }
+    //  } catch (ex) {
+    //      var message = ex.getMessage();
+    //      v_query.setLastErrorMessage(message);
+    //  }
+	*/
+
+    var debug = true;
+    doDebug('start');
+    doDebug('v_query encoded query: ' + v_query.getEncodedQuery());
+    doDebug('v_query getCondition[id]: ' + v_query.getCondition('id'));
+    doDebug('v_query getParameter[id]: ' + v_query.getParameter('id'));
+    doDebug('v_query isGet? ' + v_query.isGet() + " - sysid: " + v_query.getSysId());
+
+    var uid = '';
+    if (v_query.isGet() || v_query.getParameter("sys_id")) {
+        doDebug('Path taken - sys_id get or query');
+        uid = (v_query.getSysId()).substring(0, 20) + ''; // first 20 chars should be the user ID in okta
+    } else if (v_query.getParameter("id") || v_query.getParameter("profile_email")) {
+        doDebug('Path taken - ID or profile_email');
+        uid = v_query.getParameter("id") ? v_query.getParameter("id") : v_query.getParameter("profile_email");
+        // for some reason, when doing a get, it runs a couple times and then suddenly queries on the id parameter
+        // and it puts the full sys_id in the id parmeter, which messes up the action.
+        // if id is > 20, trim it to 20
+        uid = uid.substring(0, 20);
+    }
+    var oktaUsers = fetchOktaUsersFromAction(uid); // pull users from the flow action
+    try { //try to loop through the results and generate a sys_id for the objects
+        oktaUsers.forEach(function(o) {
+            //okta ID is 20 chars, then we take the first 12 chars of the MD5 object to make the rest of the sysid
+            o['sys_id'] = o.id; //String(o.id + (new GlideDigest().getMD5Hex(JSON.stringify(o)).substring(0, 12))).toLowerCase();
+        });
+    } catch (ex) {
+        // if this failed, it probably means the okta oauth token expired
+        var message = ex.getMessage();
+        v_query.setLastErrorMessage(message);
+    }
+
+    addUsersToTable(v_table, v_query, JSON.stringify(oktaUsers));
+
+    function fetchOktaUsersFromAction(uid) {
+        try {
+            var inputs = {};
+            var result;
+            if (uid) {
+                inputs['userid'] = uid.trim();
+            } else {
+                var limit = 200;
+                inputs['limit'] = limit; // String 
+            }
+            //call the action based on if a single user was queried, or all users
+            // TODO: lets not pull everyone into the table plz
+            // TODO2: ERROR CHECKING AND RECOVERING
+            // TODO3: if multiple id's were passed, is there a action to return multiple based on that.. 
+            //        use a filter query?
+            // TODO4: REFACTOR
+            // TODO5: Move some into script include, at least hte debug stuff + make the debug prop a sysprop
+            if (uid) {
+                result = sn_fd.FlowAPI.getRunner().action('x_417611_daves_o_0.okta_get_user').inForeground().withInputs(inputs).run();
+            } else {
+                result = sn_fd.FlowAPI.getRunner().action('x_417611_daves_o_0.okta_get_users').inForeground().withInputs(inputs).run();
+            }
+            var outputs = result.getOutputs();
+            var users = outputs['users']; // array from the full user pull
+            //singular user was returned (kept as array to make the transform easier)
+            var user = outputs['user_array'];
+
+        } catch (ex) {
+            var message = ex.getMessage();
+            v_query.setLastErrorMessage(message);
+        }
+        if (uid) {
+            return user;
+        }
+        return users;
+    }
+
+    function addUsersToTable(v_table, vquery, u) {
+        var transformerDefinition = getTransformerDefinition();
+        var transformer = new sn_tfrm.Transformer(transformerDefinition, u);
+        // transformer parses the responseBody and extracts rows
+        while (transformer.transform()) {
+            // row is field-value map e.g. { active:"true", number: "INC0000001"}
+            var row = transformer.getRow();
+
+            // you may do any additional transformations to the row like GlideDuration, GlideDataTime etc. For example,
+            // row.duration = new GlideDuration(row.duration);
+            // finally add the row to the remote table
+            v_table.addRow(row);
+        }
+    }
+
+    /**
+     * returns a sn_tfrm.TransformerDefinition, which defines the mapping of the table fields and elements in the response body
+     */
+    function getTransformerDefinition() {
+        var path = '$.*';
+        // create a rule list to map a field to its element path
+        var ruleList = new sn_tfrm.TransformerRuleList()
+            .fromJSON() // the response body is a JSON
+            // 'active' field maps to path '$.active'
+            .addRule("sys_id", "$.sys_id")
+            .addRule("id", "$.id")
+            .addRule("status", "$.status")
+            .addRule("created", "$.created")
+            .addRule("activated", "$.activated")
+            .addRule("statuschanged", "$.statusChanged")
+            .addRule("lastlogin", "$.lastLogin")
+            .addRule("lastupdated", "$.lastUpdated")
+            .addRule("passwordchanged", "$.passwordChanged")
+            .addRule("type", "$.type.id")
+            .addRule("profile_firstname", "$.profile.firstName")
+            .addRule("profile_lastname", "$.profile.lastName")
+            .addRule("profile_mobilephone", "$.profile.mobilePhone")
+            .addRule("profile_secondemail", "$.profile.secondEmail")
+            .addRule("profile_login", "$.profile.login")
+            .addRule("profile_email", "$.profile.email")
+            .addRule("links_self", "$.a__links.self.href")
+            .addRule("credentials_recovery_question", "$.credentials.recovery_question.question");
+        //.addRule("factors", "$.factors")
+        //var recordPath = "$.result"; //this object doesn't start at the result in the json
+        return new sn_tfrm.TransformerDefinition(ruleList /*, recordPath*/ );
+    }
+
+    /* DEBUG function stuff
+     */
+    doDebug('end');
+
+    function doDebug(msg) {
+        if (debug == true) {
+            gs.info('--OKTA_USERS DEBUG-- ' + msg);
+        }
+    }
+    /*** Debug util stuff end */
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-07 17:13:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>07771a0d83b0ae10cfbfc5a6feaad318</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>Okta Users remote table def</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_script_vtable_07771a0d83b0ae10cfbfc5a6feaad318</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-09 22:51:18</sys_updated_on>
+        <table>x_417611_daves_o_0_st_okta_user</table>
+        <update_script><![CDATA[(function executeUpdate(v_record, v_changed_fields) {
+     // Parameters:
+     //    v_record - a map of field names and values containing the sys_id of the record
+     //          v_record.<field_name>                   - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+     //    v_changed_fields - a map of field names and values containing the sys_id of the
+     //          v_changed_fields.<field_name>           - changed fields in the remote table GlideRecord
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record, v_changed_fields);]]></update_script>
+    </sys_script_vtable>
+</record_update>
