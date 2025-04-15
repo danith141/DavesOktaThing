@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_417611_daves_o_0.Contact Card data broker for okta_user</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Contact Card data broker for okta_user</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+"name": "data",&#13;
+"label": "data",&#13;
+"description": "Transforming JSON object into object the contact card needs",&#13;
+"readOnly": false,&#13;
+"fieldType": "json",&#13;
+"valueType": "object",&#13;
+"mandatory": true&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Transforming JSON object into object the contact card needs",
+  "comment" : ""
+}, {
+  "message" : "data",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var record = input.data; //only singular record should be sent through, no array
+    var myObj = {}; //create new object
+    myObj.heading = {};
+    myObj.heading.name = record.profile_email.displayValue;
+    myObj.heading.badges = [];
+    myObj.subheading = {};
+    /*
+    [{"label":"Network Administrator"},{"label":"Boxeo","clickable":true,"id":"account-link"}]
+    */
+    myObj.subheading.titles = [{
+        "label": "Created: " + record.created.displayValue + " | Activated: " + record.activated.displayValue || ''
+    }];
+    myObj.subheading.badges = [];
+    myObj.contact = [{
+        "clickable": false,
+        "label": "Last Updated",
+        "value": record.lastupdated.displayValue ? record.lastupdated.displayValue : '<empty>'
+    }, {
+        "clickable": false,
+        "label": "Status Changed",
+        "value": record.statuschanged.displayValue ? record.statuschanged.displayValue : '<empty>'
+    }, {
+        "clickable": false,
+        "label": "Password Changed",
+        "value": record.passwordchanged.displayValue ? record.passwordchanged.displayValue : '<empty>'
+    }, {
+        "clickable": false,
+        "label": "Second Email",
+        "value": record.profile_secondemail.displayValue ? record.profile_secondemail.displayValue : '<empty>'
+    }, {
+        "clickable": false,
+        "label": "Mobile Phone",
+        "value": record.profile_mobilephone.displayValue ? record.profile_mobilephone.displayValue : '<empty>'
+    }, {
+        "clickable": false,
+        "label": "Credential Recovery Question",
+        "value": record.credentials_recovery_question.displayValue ? record.credentials_recovery_question.displayValue : '<empty>'
+    }];
+    return myObj;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-04-15 14:44:33</sys_created_on>
+        <sys_id>344283a7837caa50cfbfc5a6feaad316</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Contact Card data broker for okta_user</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_344283a7837caa50cfbfc5a6feaad316</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-04-15 15:14:16</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=344283a7837caa50cfbfc5a6feaad316"/>
+</record_update>
