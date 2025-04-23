@@ -97,19 +97,23 @@
     doDebug('v_query getCondition[userid]: ' + v_query.getCondition('userid'));
     doDebug('v_query getParameter[userid]: ' + v_query.getParameter('userid'));
     doDebug('v_query getSysid: ' + v_query.getSysId());
+	doDebug('v_query isGet? ' + v_query.isGet());
 
     var id = '';
     var factorsArray;
     if (v_query.isGet()) { //querying a sys_id
+		doDebug("following isGet path");
         id = (v_query.getSysId()).substring(0, 20); // first 20 chars should be the user ID in okta
     } else if (v_query.getParameter('userid')) {
         //example logging output:
         // --OKTA_USERS_FACTORS DEBUG-- v_query getParameter[id]: 00u2wdf44jjCVpIWU5d7
         // --OKTA_USERS_FACTORS DEBUG-- adding row info: {"id":"opf3it3ytbdlSSYYn5d7","sys_id":"c3a5b31583bcee10cfbfc5a6feaad335"} to table. results: true
         // --OKTA_USERS_FACTORS DEBUG-- adding row info: {"id":"ost3it3b4qtPEAqZt5d7","sys_id":"47a5b31583bcee10cfbfc5a6feaad335"} to table. results: true
+		doDebug("following getParameter userid path");
         id = v_query.getParameter('userid');
 
     } else {
+		doDebug("following other path (should just return nothing)");
         // example logging output
         // --OKTA_USERS_FACTORS DEBUG-- v_query getParameter[id]: null
         // --OKTA_USERS_FACTORS DEBUG-- adding row info: {"id":"ost3it3b4qtPEAqZt5d7","sys_id":"de95331583bcee10cfbfc5a6feaad3f6"} to table. results: true
@@ -158,7 +162,7 @@
 			}
 
         } catch (ex) {
-            var message = ex.getMessage();
+            var message = ex//ex.getMessage();
             v_query.setLastErrorMessage(message);
 			doDebug('EXCEPTION FROM ACTION CALL - MESSAGE: ' + JSON.stringify(ex));
         }
@@ -219,14 +223,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>757bc34d83b4ae10cfbfc5a6feaad37f</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>Okta Users Factor remote table def</sys_name>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_script_vtable_757bc34d83b4ae10cfbfc5a6feaad37f</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:58:28</sys_updated_on>
+        <sys_updated_on>2025-04-23 19:43:15</sys_updated_on>
         <table>x_417611_daves_o_0_st_okta_user_factor</table>
         <update_script><![CDATA[(function executeUpdate(v_record, v_changed_fields) {
      // Parameters:

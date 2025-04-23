@@ -14,90 +14,6 @@
         <component_dependencies/>
         <composition>[
     {
-        "bundleLink": {
-            "bundleInstanceId": "form_1",
-            "elementType": "member",
-            "originalElementId": "modalContainerViewport"
-        },
-        "definition": {
-            "id": "61c315e9ccb8970546c30f3e2da41a32",
-            "type": "MACROPONENT_VIEWPORT"
-        },
-        "elementId": "modalcontainerviewport",
-        "elementLabel": "Modal Container (Viewport)",
-        "eventMappings": [],
-        "extensionPoints": [
-            {
-                "controllerDependencyMap": null,
-                "controllerElementId": "record",
-                "name": "Record page modals",
-                "sysId": "e38960c1c30301103581a5a1d840dd45"
-            }
-        ],
-        "isHero": false,
-        "isHidden": {
-            "type": "JSON_LITERAL",
-            "value": null
-        },
-        "isNonDestructive": false,
-        "items": [],
-        "overrides": null,
-        "preset": null,
-        "propertyValues": {
-            "bare": {
-                "type": "JSON_LITERAL",
-                "value": true
-            },
-            "contents": {
-                "type": "JSON_LITERAL",
-                "value": {
-                    "fields": {},
-                    "route": ""
-                }
-            },
-            "disableDismiss": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "displayOptions": {
-                "type": "JSON_LITERAL",
-                "value": {}
-            },
-            "enableResizable": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "labelledby": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
-            "resizableMaxHeight": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "resizableMaxWidth": {
-                "type": "JSON_LITERAL",
-                "value": null
-            },
-            "resizableMinHeight": {
-                "type": "JSON_LITERAL",
-                "value": 133
-            },
-            "resizableMinWidth": {
-                "type": "JSON_LITERAL",
-                "value": 420
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            }
-        },
-        "slot": null,
-        "styles": {
-            "width": "100%"
-        }
-    },
-    {
         "definition": {
             "id": "d356d14b6e293a3020a244b63d278d8f",
             "type": "MACROPONENT"
@@ -161,6 +77,105 @@
                                     "operation": null,
                                     "targetId": "TsQCJfddMBaajHjjaaiiNbodByeehhch",
                                     "type": "EVENT"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                                        "operationName": "REFRESH",
+                                        "parentResourceId": "look_up_user_record",
+                                        "payload": {
+                                            "type": "JSON_LITERAL",
+                                            "value": {}
+                                        }
+                                    },
+                                    "targetId": "JpKeehhjvIzBUeeNjjvQBFwTAeeddjxn",
+                                    "type": "DATABROKER_OP"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                                        "operationName": "REFRESH",
+                                        "parentResourceId": "look_up_okta_user",
+                                        "payload": {
+                                            "type": "JSON_LITERAL",
+                                            "value": {}
+                                        }
+                                    },
+                                    "targetId": "eergAffPOKAaarMjjiaaDdhhbEXcffw",
+                                    "type": "DATABROKER_OP"
+                                },
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": null,
+                                    "operation": {
+                                        "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                                        "operationName": "REFRESH",
+                                        "parentResourceId": "look_up_okta_user_factors",
+                                        "payload": {
+                                            "type": "JSON_LITERAL",
+                                            "value": {}
+                                        }
+                                    },
+                                    "targetId": "bbHEcnPNWBULreeddFUCCeehhfUNggBm",
+                                    "type": "DATABROKER_OP"
+                                }
+                            ]
+                        },
+                        {
+                            "eventMappingId": "mSGPbeehhZeAkvbjjlYGtewvCTBv",
+                            "isConfiguration": false,
+                            "offRowStorageId": null,
+                            "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
+                            "sourceEventCorrelationId": null,
+                            "sourceEventDefinition": {
+                                "apiName": "sn_input.NOW_INPUT#INPUT",
+                                "id": null,
+                                "type": "UXEVENT"
+                            },
+                            "sourceEventSysId": null,
+                            "targets": [
+                                {
+                                    "broker": null,
+                                    "clientScript": null,
+                                    "conditional": null,
+                                    "declarativeAction": null,
+                                    "event": {
+                                        "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                        "payload": {
+                                            "container": {
+                                                "propName": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "userId"
+                                                },
+                                                "value": {
+                                                    "binding": {
+                                                        "address": [
+                                                            "fieldValue"
+                                                        ]
+                                                    },
+                                                    "type": "EVENT_PAYLOAD_BINDING"
+                                                }
+                                            },
+                                            "type": "MAP_CONTAINER"
+                                        },
+                                        "sysId": "32408b42ff7a10109046e490703bf176"
+                                    },
+                                    "operation": null,
+                                    "targetId": "ggciZJfoxDEJzjjdoNccLSPeeNI",
+                                    "type": "EVENT"
                                 }
                             ]
                         }
@@ -178,41 +193,7 @@
                                 },
                                 "elementId": "button_1",
                                 "elementLabel": "Button 1",
-                                "eventMappings": [
-                                    {
-                                        "eventMappingId": "LuXrMPRLDkciijjTgJktwBiirwd",
-                                        "isConfiguration": false,
-                                        "offRowStorageId": null,
-                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
-                                        "sourceEventCorrelationId": null,
-                                        "sourceEventDefinition": {
-                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
-                                            "id": null,
-                                            "type": "UXEVENT"
-                                        },
-                                        "sourceEventSysId": null,
-                                        "targets": [
-                                            {
-                                                "broker": null,
-                                                "clientScript": null,
-                                                "conditional": null,
-                                                "declarativeAction": null,
-                                                "event": null,
-                                                "operation": {
-                                                    "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                                                    "operationName": "REFRESH",
-                                                    "parentResourceId": "look_up_user_record",
-                                                    "payload": {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": {}
-                                                    }
-                                                },
-                                                "targetId": "elBBaPegDkeeddEjjjMOxwQSeeceehhO",
-                                                "type": "DATABROKER_OP"
-                                            }
-                                        ]
-                                    }
-                                ],
+                                "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
                                     "value": null
@@ -225,7 +206,7 @@
                                     },
                                     "disabled": {
                                         "type": "JSON_LITERAL",
-                                        "value": false
+                                        "value": true
                                     },
                                     "icon": {
                                         "type": "JSON_LITERAL",
@@ -527,7 +508,7 @@
                                     },
                                     "avatarSrc": {
                                         "type": "JSON_LITERAL",
-                                        "value": "/4a31e5d43740310042106710ce41f1a0.iix?t=small"
+                                        "value": ""
                                     },
                                     "content": {
                                         "binding": {
@@ -557,11 +538,10 @@
                                     "headingName": {
                                         "binding": {
                                             "address": [
-                                                "look_up_user_record",
-                                                "results",
-                                                "0",
-                                                "name",
-                                                "displayValue"
+                                                "sys_user_contact_card_data_broker",
+                                                "output",
+                                                "heading",
+                                                "name"
                                             ]
                                         },
                                         "type": "DATA_OUTPUT_BINDING"
@@ -692,7 +672,7 @@
                                     },
                                     "avatarSrc": {
                                         "type": "JSON_LITERAL",
-                                        "value": "/4a31e5d43740310042106710ce41f1a0.iix?t=small"
+                                        "value": ""
                                     },
                                     "content": {
                                         "binding": {
@@ -1311,13 +1291,15 @@
                     "preset": null,
                     "propertyValues": {},
                     "repeatWith": {
-                        "binding": {
-                            "address": [
-                                "look_up_okta_user_factors",
-                                "results"
-                            ]
-                        },
-                        "type": "DATA_OUTPUT_BINDING"
+                        "type": "JSON_LITERAL",
+                        "value": [
+                            {
+                                "task": "A"
+                            },
+                            {
+                                "task": "B"
+                            }
+                        ]
                     },
                     "slot": null,
                     "styles": {
@@ -1667,79 +1649,6 @@
         "elementLabel": "Look up user record",
         "eventMappings": [
             {
-                "eventMappingId": "HiKyIPffrDaapyeeddKwGqkSMjMca",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "7a44ca5b83346a50cfbfc5a6feaad38d",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "sys_user_contact_card_data_broker",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "LivjEfkzCEfUjjXAEdeepBffWao",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "look_up_okta_user",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "HTZnkvWeBaannjjqoEaaXCjjlXxP",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "action": null,
-                                    "label": "Loading...",
-                                    "loading": true,
-                                    "nonBlocking": false
-                                }
-                            },
-                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
-                        },
-                        "operation": null,
-                        "targetId": "fiieeddaaBeehhsjCaabbIjjokKeeddpWeeddfViiaa",
-                        "type": "EVENT"
-                    }
-                ]
-            },
-            {
                 "eventMappingId": "FeYVnfWeeddAaaFTjjgeeLXWhhzuGnR",
                 "isConfiguration": false,
                 "offRowStorageId": null,
@@ -1853,7 +1762,7 @@
                 "value": "sys_user"
             }
         },
-        "readEvaluationMode": "EXPLICIT"
+        "readEvaluationMode": "EAGER"
     },
     {
         "definition": {
@@ -1868,14 +1777,13 @@
                 "binding": {
                     "address": [
                         "look_up_user_record",
-                        "results",
-                        "0"
+                        "results"
                     ]
                 },
                 "type": "DATA_OUTPUT_BINDING"
             }
         },
-        "readEvaluationMode": "EXPLICIT"
+        "readEvaluationMode": "EAGER"
     },
     {
         "definition": {
@@ -1884,45 +1792,7 @@
         },
         "elementId": "look_up_okta_user_factors",
         "elementLabel": "Look up okta user factors",
-        "eventMappings": [
-            {
-                "eventMappingId": "OAeeAavsADkkEeeddDkFOMFiifhWii",
-                "isConfiguration": false,
-                "offRowStorageId": null,
-                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                "sourceEventCorrelationId": null,
-                "sourceEventDefinition": {
-                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
-                    "id": null,
-                    "type": "UXEVENT"
-                },
-                "sourceEventSysId": null,
-                "targets": [
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": {
-                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {
-                                    "action": null,
-                                    "label": null,
-                                    "loading": false,
-                                    "nonBlocking": false
-                                }
-                            },
-                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
-                        },
-                        "operation": null,
-                        "targetId": "msNHkPbbOCkkbbjjaaeeBVjjUujggvS",
-                        "type": "EVENT"
-                    }
-                ]
-            }
-        ],
+        "eventMappings": [],
         "inputValues": {
             "encodedQuery": {
                 "transform": {
@@ -2012,42 +1882,6 @@
                         "clientScript": null,
                         "conditional": null,
                         "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "344283a7837caa50cfbfc5a6feaad316",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "contact_card_data_broker_for_okta_user_1",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "TffjMgvPnBaaxmjjxMCUbbDddeeFdy",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
-                        "event": null,
-                        "operation": {
-                            "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
-                            "operationName": "REFRESH",
-                            "parentResourceId": "look_up_okta_user_factors",
-                            "payload": {
-                                "type": "JSON_LITERAL",
-                                "value": {}
-                            }
-                        },
-                        "targetId": "jTQKifhNDEHrjjvwAmwneehhjjRdG",
-                        "type": "DATABROKER_OP"
-                    },
-                    {
-                        "broker": null,
-                        "clientScript": null,
-                        "conditional": null,
-                        "declarativeAction": null,
                         "event": {
                             "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
                             "payload": {
@@ -2082,8 +1916,27 @@
         ],
         "inputValues": {
             "encodedQuery": {
-                "type": "JSON_LITERAL",
-                "value": "profile_email=david.nendza@gmail.com"
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "profile_email="
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "userId"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
             },
             "limit": {
                 "type": "JSON_LITERAL",
@@ -2132,9 +1985,8 @@
             "data": {
                 "binding": {
                     "address": [
-                        "look_up_okta_user",
-                        "results",
-                        "0"
+                        "look_up_okta_user_factors",
+                        "results"
                     ]
                 },
                 "type": "DATA_OUTPUT_BINDING"
@@ -2240,7 +2092,10 @@
         <state_properties>[
     {
         "id": "",
-        "initialValue": null,
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": "blahblah@example.com"
+        },
         "name": "userId",
         "shape": "",
         "valueType": "string"
@@ -2258,14 +2113,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-04 19:57:40</sys_created_on>
         <sys_id>9870e30083786a10cfbfc5a6feaad394</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_ux_macroponent_9870e30083786a10cfbfc5a6feaad394</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-16 14:34:37</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:08:58</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9870e30083786a10cfbfc5a6feaad394"/>
 </record_update>

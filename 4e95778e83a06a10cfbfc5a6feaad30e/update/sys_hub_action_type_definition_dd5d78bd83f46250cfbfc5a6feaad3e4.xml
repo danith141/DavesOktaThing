@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd5d78bd83f46250cfbfc5a6feaad3e4</sys_id>
-        <sys_mod_count>71</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>Okta Get User</sys_name>
         <sys_overrides/>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd5d78bd83f46250cfbfc5a6feaad3e4</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:18</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:01</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -67,9 +67,9 @@
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 18:35:51</sys_created_on>
         <sys_id>e2adb0fd83f46250cfbfc5a6feaad3c8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 18:51:55</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:12:57</sys_updated_on>
         <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">a2adb0fd83f46250cfbfc5a6feaad3bb</variable>
     </sys_variable_value>
@@ -176,10 +176,10 @@
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 18:42:53</sys_created_on>
         <sys_id>654fb47183386250cfbfc5a6feaad3fb</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:10:03</sys_updated_on>
+        <sys_updated_on>2025-04-23 20:14:50</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=654fb47183386250cfbfc5a6feaad3fb"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -204,26 +204,26 @@
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 18:42:53</sys_created_on>
         <sys_id>e94ff47183386250cfbfc5a6feaad30a</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:10:03</sys_updated_on>
+        <sys_updated_on>2025-04-23 20:14:50</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
+    var oktaError = { };&#13;
 // Will check for error, and also if no error make the object into an array for compatibility with the users pull&#13;
 // remote table def&#13;
     //gs.info(inputs.responseBody);&#13;
-    var rb = JSON.parse(inputs.responseBody); //input comes through as a string, need to put it back to an object&#13;
+    try {&#13;
+        var rb = JSON.parse(inputs.responseBody); //input comes through as a string, need to put it back to an object&#13;
+    } catch (e){&#13;
+        // if the JSON parse fails, it's prob a 401 error/token timed out.. no responseBody, throw error to exit&#13;
+        throw new Error("Invalid response body");&#13;
+    }&#13;
     //gs.info('keys of body: ' + Object.keys(rb));&#13;
     if(Object.keys(rb).includes('errorCode')){&#13;
         //{"errorCode":"E0000007","errorSummary":"Not found: Resource not found: as (User)","errorLink":"E0000007","errorId":"oaeOKxAGf3ZTFe9qYFUX-ajig","errorCauses":[]}&#13;
-        var oktaError = { "Okta_Error_Code": rb.errorCode, "Error_Message": rb.errorSummary };&#13;
+        oktaError = { "Okta_Error_Code": rb.errorCode, "Error_Message": rb.errorSummary };&#13;
         throw new Error(oktaError);&#13;
     } else {&#13;
-        /* doesn't work&#13;
-        gs.info("OUTPUTS STRINGIFIEDIDIDDIDID " + JSON.stringify(outputs));&#13;
-        gs.info("OUTPUTS STRINGIFIEDIDIDDIDID keys" + Object.keys(outputs));&#13;
-        outputs['responsebodyarray'] = [];&#13;
-        outputs['responsebodyarray'].push(rb);&#13;
-        */&#13;
         var a = [];&#13;
         a.push(rb);&#13;
         outputs['new_body'] = JSON.stringify(a);&#13;
@@ -381,7 +381,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1f0945fd83386250cfbfc5a6feaad307</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -389,7 +389,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:15</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:12:57</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -983,7 +983,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>93a395bd83786250cfbfc5a6feaad368</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -991,7 +991,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:15</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:12:57</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1252,14 +1252,14 @@
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 18:35:51</sys_created_on>
         <sys_id>26adb0fd83f46250cfbfc5a6feaad3bf</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>109</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:15</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:12:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1286,7 +1286,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>13a395bd83786250cfbfc5a6feaad372</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1294,7 +1294,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:15</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:12:57</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -1484,21 +1484,21 @@
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2d5db8bd83f46250cfbfc5a6feaad378^sys_idNOT IN2d2ebcfd83f46250cfbfc5a6feaad34c,bf6d3cbd83f46250cfbfc5a6feaad3f7"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2025-04-09 11:34:26">2d5db8bd83f46250cfbfc5a6feaad378</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 04-09-2025 13:34:26">2d5db8bd83f46250cfbfc5a6feaad378</action_status_metadata_id>
         <condition>{{step[43ceae67-425c-4c5a-a4c0-e22bb6ef192c].__step_status__.code}}=1</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
+        <dont_treat_as_error>true</dont_treat_as_error>
         <label>error from rest step</label>
         <order>1</order>
         <status>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[43ceae67-425c-4c5a-a4c0-e22bb6ef192c].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[43ceae67-425c-4c5a-a4c0-e22bb6ef192c].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 18:37:58</sys_created_on>
         <sys_id>2d2ebcfd83f46250cfbfc5a6feaad34c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 19:14:45</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:12:30</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2025-04-09 11:34:26">2d5db8bd83f46250cfbfc5a6feaad378</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 04-09-2025 13:34:26">2d5db8bd83f46250cfbfc5a6feaad378</action_status_metadata_id>
         <condition>{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_code}}!=0</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>OpenAPI step execution has failed</label>
@@ -1609,17 +1609,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Okta Get User">dd5d78bd83f46250cfbfc5a6feaad3e4</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"dcd3d9bd83786250cfbfc5a6feaad3e4","name":"plan","plan_signature":null}}</plan>
-        <snapshot>f118153583b86250cfbfc5a6feaad33d</snapshot>
+        <snapshot>11e721d28385aa90cfbfc5a6feaad367</snapshot>
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 20:12:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dcd3d9bd83786250cfbfc5a6feaad3e4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:20</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:03</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2093,7 +2093,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33c3d9bd83786250cfbfc5a6feaad374</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2101,7 +2101,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:18</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:01</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -2228,10 +2228,10 @@
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 20:12:36</sys_created_on>
         <sys_id>ffc3d9bd83786250cfbfc5a6feaad33f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:12:37</sys_updated_on>
+        <sys_updated_on>2025-04-23 20:16:37</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ffc3d9bd83786250cfbfc5a6feaad33f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2242,26 +2242,26 @@
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 20:12:37</sys_created_on>
         <sys_id>bbc3d9bd83786250cfbfc5a6feaad36d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:12:37</sys_updated_on>
+        <sys_updated_on>2025-04-23 20:16:37</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
+    var oktaError = { };&#13;
 // Will check for error, and also if no error make the object into an array for compatibility with the users pull&#13;
 // remote table def&#13;
     //gs.info(inputs.responseBody);&#13;
-    var rb = JSON.parse(inputs.responseBody); //input comes through as a string, need to put it back to an object&#13;
+    try {&#13;
+        var rb = JSON.parse(inputs.responseBody); //input comes through as a string, need to put it back to an object&#13;
+    } catch (e){&#13;
+        // if the JSON parse fails, it's prob a 401 error/token timed out.. no responseBody, throw error to exit&#13;
+        throw new Error("Invalid response body");&#13;
+    }&#13;
     //gs.info('keys of body: ' + Object.keys(rb));&#13;
     if(Object.keys(rb).includes('errorCode')){&#13;
         //{"errorCode":"E0000007","errorSummary":"Not found: Resource not found: as (User)","errorLink":"E0000007","errorId":"oaeOKxAGf3ZTFe9qYFUX-ajig","errorCauses":[]}&#13;
-        var oktaError = { "Okta_Error_Code": rb.errorCode, "Error_Message": rb.errorSummary };&#13;
+        oktaError = { "Okta_Error_Code": rb.errorCode, "Error_Message": rb.errorSummary };&#13;
         throw new Error(oktaError);&#13;
     } else {&#13;
-        /* doesn't work&#13;
-        gs.info("OUTPUTS STRINGIFIEDIDIDDIDID " + JSON.stringify(outputs));&#13;
-        gs.info("OUTPUTS STRINGIFIEDIDIDDIDID keys" + Object.keys(outputs));&#13;
-        outputs['responsebodyarray'] = [];&#13;
-        outputs['responsebodyarray'].push(rb);&#13;
-        */&#13;
         var a = [];&#13;
         a.push(rb);&#13;
         outputs['new_body'] = JSON.stringify(a);&#13;
@@ -2421,7 +2421,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fbc3d9bd83786250cfbfc5a6feaad347</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2429,7 +2429,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:18</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:00</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -2883,14 +2883,14 @@
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-09 20:12:37</sys_created_on>
         <sys_id>88d3d9bd83786250cfbfc5a6feaad387</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:18</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2917,7 +2917,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8cd3d9bd83786250cfbfc5a6feaad37e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2925,7 +2925,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:18</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:01</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -3026,34 +3026,34 @@
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
         <sys_updated_on>2025-04-09 20:12:37</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=44d3d9bd83786250cfbfc5a6feaad393^sys_idNOT IN7918153583b86250cfbfc5a6feaad33c,f518153583b86250cfbfc5a6feaad33c"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=44d3d9bd83786250cfbfc5a6feaad393^sys_idNOT IN19e721d28385aa90cfbfc5a6feaad366,95e721d28385aa90cfbfc5a6feaad366"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2025-04-09 13:12:37">44d3d9bd83786250cfbfc5a6feaad393</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 04-09-2025 15:12:37">44d3d9bd83786250cfbfc5a6feaad393</action_status_metadata_id>
         <condition>{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_code}}!=0</condition>
         <dont_treat_as_error>false</dont_treat_as_error>
         <label>OpenAPI step execution has failed</label>
         <order>2</order>
         <status>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[5ab27e8f-a527-4250-b083-7b2affa024b6].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
-        <sys_created_on>2025-04-09 20:31:18</sys_created_on>
-        <sys_id>7918153583b86250cfbfc5a6feaad33c</sys_id>
+        <sys_created_on>2025-04-23 21:13:01</sys_created_on>
+        <sys_id>19e721d28385aa90cfbfc5a6feaad366</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:18</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2025-04-09 13:12:37">44d3d9bd83786250cfbfc5a6feaad393</action_status_metadata_id>
+        <action_status_metadata_id display_value="Created 04-09-2025 15:12:37">44d3d9bd83786250cfbfc5a6feaad393</action_status_metadata_id>
         <condition>{{step[43ceae67-425c-4c5a-a4c0-e22bb6ef192c].__step_status__.code}}=1</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
+        <dont_treat_as_error>true</dont_treat_as_error>
         <label>error from rest step</label>
         <order>1</order>
         <status>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{\\\"code\\\":\\\"{{step[43ceae67-425c-4c5a-a4c0-e22bb6ef192c].__step_status__.code}}\\\"}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[43ceae67-425c-4c5a-a4c0-e22bb6ef192c].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</status>
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
-        <sys_created_on>2025-04-09 20:31:18</sys_created_on>
-        <sys_id>f518153583b86250cfbfc5a6feaad33c</sys_id>
+        <sys_created_on>2025-04-23 21:13:01</sys_created_on>
+        <sys_id>95e721d28385aa90cfbfc5a6feaad366</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 20:31:18</sys_updated_on>
+        <sys_updated_on>2025-04-23 21:13:01</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>userid</element>

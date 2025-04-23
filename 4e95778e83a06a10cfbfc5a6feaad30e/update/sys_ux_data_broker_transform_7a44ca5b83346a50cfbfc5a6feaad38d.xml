@@ -29,12 +29,12 @@
         <schema_version>1.0.0</schema_version>
         <script><![CDATA[function transform(input) {
     var returnArray = [];
-    var record = input.data; //only singular record should be sent through
-
-    // for(var i in record){
+    var empty = '<empty>';
+    var record = input.data; // bound to the results from the user record search data broker.
+    // if empty, means no records found, or hasn't run yet so we want to just return empty info
     var myObj = {}; //create new object
     myObj.heading = {};
-    myObj.heading.name = record.name.displayValue;
+    myObj.heading.name = empty;
     myObj.heading.badges = [];
     myObj.subheading = {};
     myObj.subheading.titles = [];
@@ -42,31 +42,36 @@
     myObj.contact = [{
         "clickable": false,
         "label": "Home Phone",
-        "value": record.home_phone.displayValue
+        "value": empty
     }, {
         "clickable": false,
         "label": "Mobile Phone",
-        "value": record.mobile_phone.displayValue
+        "value": empty
     }, {
         "clickable": false,
         "label": "Email",
-        "value": record.email.displayValue
+        "value": empty
     }];
-
+    if (record.length > 0) { //TODO: check if object is also an array?
+        myObj.heading.name = record[0].name.displayValue;
+        myObj.contact[0].value = record[0].home_phone.displayValue;
+        myObj.contact[1].value = record[0].mobile_phone.displayValue;
+        myObj.contact[2].value = record[0].email.displayValue;
+    }
     return myObj;
 }]]></script>
         <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
         <sys_created_on>2025-04-14 15:37:08</sys_created_on>
         <sys_id>7a44ca5b83346a50cfbfc5a6feaad38d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Contact Card data broker for sys_user</sys_name>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_ux_data_broker_transform_7a44ca5b83346a50cfbfc5a6feaad38d</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-15 14:44:22</sys_updated_on>
+        <sys_updated_on>2025-04-23 19:27:46</sys_updated_on>
     </sys_ux_data_broker_transform>
     <sys_translated_text action="delete_multiple" query="documentkey=7a44ca5b83346a50cfbfc5a6feaad38d"/>
 </record_update>
