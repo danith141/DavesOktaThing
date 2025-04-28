@@ -9,6 +9,11 @@
         <element label="profile_email" max_length="40" name="profile_email" type="string"/>
         <element label="profile_secondEmail" max_length="40" name="profile_secondemail" type="string"/>
         <element label="profile_mobilePhone" max_length="40" name="profile_mobilephone" type="phone_number_e164"/>
+        <element choice="1" label="User Actions" max_length="4000" name="user_actions" type="simple_name_values">
+            <choice>
+                <element inactive_on_update="false" label="test" value="{&#13;&#10;            &quot;href&quot;: &quot;https://dev-13141697.okta.com/api/v1/users/00u2wdf44jjCVpIWU5d7/lifecycle/deactivate&quot;,&#13;&#10;            &quot;method&quot;: &quot;POST&quot;&#13;&#10;        }"/>
+            </choice>
+        </element>
         <element label="lastLogin" max_length="40" name="lastlogin" type="glide_date_time"/>
         <element label="_links_self" max_length="1024" name="links_self" type="url"/>
         <element label="credentials_recovery_question" max_length="40" name="credentials_recovery_question" type="string"/>
