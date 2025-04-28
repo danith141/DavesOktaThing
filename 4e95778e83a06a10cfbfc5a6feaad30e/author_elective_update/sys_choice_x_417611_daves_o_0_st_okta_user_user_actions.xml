@@ -20,22 +20,19 @@
             <element>user_actions</element>
             <hint/>
             <inactive>false</inactive>
-            <label>test</label>
+            <label>[]</label>
             <language>en</language>
             <name>x_417611_daves_o_0_st_okta_user</name>
             <sequence/>
             <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-04-28 16:01:48</sys_created_on>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-04-28 20:16:19</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-04-28 16:01:48</sys_updated_on>
-            <value>{&#13;
-            "href": "https://dev-13141697.okta.com/api/v1/users/00u2wdf44jjCVpIWU5d7/lifecycle/deactivate",&#13;
-            "method": "POST"&#13;
-        }</value>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-04-28 20:16:19</sys_updated_on>
+            <value>[]</value>
         </sys_choice>
     </sys_choice>
 </record_update>

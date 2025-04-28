@@ -4,7 +4,7 @@
         <advanced>true</advanced>
         <cache_isolation_level>SYSTEM</cache_isolation_level>
         <cache_strategy>CACHE_BY_QUERY</cache_strategy>
-        <cache_ttl>3600</cache_ttl>
+        <cache_ttl>0</cache_ttl>
         <delete_script><![CDATA[(function executeDelete(v_record) {
      // Parameters:
      //      v_record - a map of field names and values containing (among others) the
@@ -24,7 +24,7 @@
      //      v_record.setLastErrorMessage(message);
      //  }
   })(v_record);]]></delete_script>
-        <editable>false</editable>
+        <editable>true</editable>
         <enhanced_capacity>false</enhanced_capacity>
         <flow/>
         <insert_script><![CDATA[(function executeInsert(v_record) {
@@ -113,7 +113,29 @@
     if (oktaUsers != undefined && oktaUsers.length > 0) {
         oktaUsers.forEach(function(o) {
             //okta ID is 20 chars, then we take the first 12 chars of the MD5 object to make the rest of the sysid
+			// for some reason just setting it right before the row commit didn't work, so we edit the object before
+			// it goes to the transform and let the transform do it's thing
             o['sys_id'] = o.id; //String(o.id + (new GlideDigest().getMD5Hex(JSON.stringify(o)).substring(0, 12))).toLowerCase();
+			// build the user_actions string (name-value pair)
+			var links = o.a__links;
+			var actions = Object.keys(links);
+			var userActions = {};
+			var userActionsSelection = [];
+			actions.forEach(function (action){
+				if(Object.keys(links[action]).indexOf('method') != -1 && Object.keys(links[action]).indexOf('href') != -1){
+					//userActions.push({ "name": action, "value": /*links[action]['href']*/ 'test'});
+					userActions[action] = JSON.stringify(links[action]);
+					userActionsSelection.push({
+						label: action,
+						value: action
+					});
+				}
+			});
+			doDebug('userActions are: ' + JSON.stringify(userActions));
+			o['userActions'] = JSON.stringify(userActions);
+			o['userActionsSelection'] = JSON.stringify(userActionsSelection);
+
+
         });
         addUsersToTable(v_table, v_query, JSON.stringify(oktaUsers));
     }
@@ -168,6 +190,10 @@
             // you may do any additional transformations to the row like GlideDuration, GlideDataTime etc. For example,
             // row.duration = new GlideDuration(row.duration);
             // finally add the row to the remote table
+
+			// try to add the user_actions into the field..
+			//row.user_action_selection = "test1"; //[{ label: "test", value: "value test" }];
+			//row.user_action_selection = "test2";
             v_table.addRow(row);
         }
     }
@@ -198,7 +224,9 @@
             .addRule("profile_login", "$.profile.login")
             .addRule("profile_email", "$.profile.email")
             .addRule("links_self", "$.a__links.self.href")
-            .addRule("credentials_recovery_question", "$.credentials.recovery_question.question");
+            .addRule("credentials_recovery_question", "$.credentials.recovery_question.question")
+			.addRule("user_actions","$.userActions")
+			.addRule("user_action_selection","$.userActionsSelection");
         //.addRule("factors", "$.factors")
         //var recordPath = "$.result"; //this object doesn't start at the result in the json
         return new sn_tfrm.TransformerDefinition(ruleList /*, recordPath*/ );
@@ -222,34 +250,44 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>07771a0d83b0ae10cfbfc5a6feaad318</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>Okta Users remote table def</sys_name>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_script_vtable_07771a0d83b0ae10cfbfc5a6feaad318</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-24 16:32:20</sys_updated_on>
+        <sys_updated_on>2025-04-28 21:15:33</sys_updated_on>
         <table>x_417611_daves_o_0_st_okta_user</table>
         <update_script><![CDATA[(function executeUpdate(v_record, v_changed_fields) {
-     // Parameters:
-     //    v_record - a map of field names and values containing the sys_id of the record
-     //          v_record.<field_name>                   - fields in the remote table GlideRecord
-     //          v_record.setLastErrorMessage(message)   - signal an error
-     //    v_changed_fields - a map of field names and values containing the sys_id of the
-     //          v_changed_fields.<field_name>           - changed fields in the remote table GlideRecord
- 
-     // Sample code:
-     //  try {
-     //      update-external-system;
-     //      if (there-was-an-error) {
-     //          var message = ...;
-     //          v_record.setLastErrorMessage(message);
-     //      }
-     //  } catch (ex) {
-     //      var message = ex.getMessage();
-     //      v_record.setLastErrorMessage(message);
-     //  }
-  })(v_record, v_changed_fields);]]></update_script>
+    // Parameters:
+    //    v_record - a map of field names and values containing the sys_id of the record
+    //          v_record.<field_name>                   - fields in the remote table GlideRecord
+    //          v_record.setLastErrorMessage(message)   - signal an error
+    //    v_changed_fields - a map of field names and values containing the sys_id of the
+    //          v_changed_fields.<field_name>           - changed fields in the remote table GlideRecord
+
+    // Sample code:
+    //  try {
+    //      update-external-system;
+    //      if (there-was-an-error) {
+    //          var message = ...;
+    //          v_record.setLastErrorMessage(message);
+    //      }
+    //  } catch (ex) {
+    //      var message = ex.getMessage();
+    //      v_record.setLastErrorMessage(message);
+    //  }
+    Object.keys(v_changed_fields).map(function(k) {
+        switch (k) {
+            case "u_number":
+                //gr.number = v_changed_fields.u_number;
+                break;
+            case "u_short_description":
+                //gr.short_description = v_changed_fields.u_short_description;
+                break;
+        }
+    });
+})(v_record, v_changed_fields);]]></update_script>
     </sys_script_vtable>
 </record_update>
