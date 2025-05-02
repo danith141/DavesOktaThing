@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>okta_user_action_selection</name>
+        <scoped_name>x_417611_daves_o_0_okta_user_action_selection</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-05-02 17:36:05</sys_created_on>
+        <sys_id>ba3c87c98359e610cfbfc5a6feaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>okta_user_action_selection</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_ui_macro_ba3c87c98359e610cfbfc5a6feaad3dc</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-05-02 17:36:05</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <span id="${jvar_n}" class="btn btn-default icon-user-group" tabindex="0" title="Add my group">
+        <span class="sr-only">Add my group</span>
+    </span>
+    <script>
+        function addMyGroup(reference) {
+            //Get the group reference field and populate the first group queried
+            var s = reference.split('.');
+            var referenceField = s[1];
+            var grpRec = new GlideRecord('sys_user_grmember');
+            grpRec.addQuery('user', '$[gs.getUserID()]');
+            //Uncomment the following line if using a 'Primary' boolean field on the 'sys_user_grmember' table
+            //grpRec.addQuery('u_primary', true);
+            grpRec.query(groupCallback);
+
+            //After the server returns the query recordset, continue here
+            function groupCallback(grpRec) {
+                //Hide any previous field messages
+                try {
+                    g_form.hideFieldMsg(referenceField, true);
+                } catch (e) {}
+
+                //Check to see if the user is a member of a single group
+                if (grpRec.next()) {
+                    //Populate the first group found
+                    g_form.setValue(referenceField, grpRec.group);
+                } else {
+                    g_form.showFieldMsg(referenceField, 'You are not a member of any groups or have no primary group defined.', 'error');
+                }
+            }
+        }
+    </script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_417611_daves_o_0.DavesOktaThingUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>DavesOktaThingUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var DavesOktaThingUtils = Class.create();
+DavesOktaThingUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    DEBUG: true,
+    ME: "DavesOktaThingUtils",
+
+    processUserSelection: function() {
+        const url = this.getParameter('sysparm_url');
+        const method = this.getParameter('sysparm_method');
+		this.debugMsg("URL IS: " + url);
+		this.debugMsg("METHOD IS: " + method);
+        try {
+            var inputs = {};
+            inputs['endpoint'] = url; // URL 
+            inputs['method'] = method; // String 
+
+            // Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+            // sn_fd.FlowAPI.getRunner().action('x_417611_daves_o_0.do_the_okta_user_action_selection').inBackground().withInputs(inputs).run();
+
+            // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+            var result = sn_fd.FlowAPI.getRunner().action('x_417611_daves_o_0.do_the_okta_user_action_selection').inForeground().withInputs(inputs).run();
+            var outputs = result.getOutputs();
+
+            // Get Outputs:
+            // Note: outputs can only be retrieved when executing synchronously.
+            var response = outputs['response']; // String
+			var status_code = outputs['status_code']; // Integer
+
+        } catch (ex) {
+            var message = ex.getMessage();
+            gs.error(message);
+        }
+		return JSON.stringify({ "response": response, "status_code": status_code});
+    },
+
+    debugMsg: function(msg) {
+        if (this.DEBUG === true) {
+            gs.info("**DEBUG FOR " + this.ME + " ::: " + msg);
+        }
+    },
+
+    type: 'DavesOktaThingUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-05-02 18:21:23</sys_created_on>
+        <sys_id>4ab4df098399e610cfbfc5a6feaad3fe</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>DavesOktaThingUtils</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_script_include_4ab4df098399e610cfbfc5a6feaad3fe</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-05-02 19:23:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

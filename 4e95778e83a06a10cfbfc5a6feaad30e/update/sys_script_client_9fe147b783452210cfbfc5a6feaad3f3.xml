@@ -4,30 +4,26 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description>Parses the initial values in the user_actions field and fills out the user actions menu with the options</description>
-        <field/>
+        <field>user_actions</field>
         <global>true</global>
         <isolate_script>false</isolate_script>
         <messages/>
         <name>Parse User Actions</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-    if (isLoading || newValue === '') {
-        return;
-    }
+
     var userActions = g_form.getValue('user_actions');
-    console.log("does this even run? useractions - " + userActions);
-    g_form.setValue('user_action_selection', 'will this work', 'test');
     if (userActions) {
             var actions = JSON.parse(userActions);
-            var newActions = {};
+            var newActions = {};  
+            var action = Object.keys(actions);
+            action.forEach(function(a) {
+                //g_form.addOption('user_actions', actions[a])
+                //newActions[action] = actions[a].href /*JSON.stringify(actions[a])*/ ;
+				g_form.addOption('user_action_selection',a,a);
 
-       
-        //    var action = Object.keys(actions);
-        //    action.forEach(function(a) {
-        //        //g_form.addOption('user_actions', actions[a])
-        //        newActions[action] = actions[a].href /*JSON.stringify(actions[a])*/ ;
-        //    });
-        //    g_form.setValue('user_actions', JSON.stringify(newActions));
+            });
+            //g_form.setValue('user_action_selection', JSON.stringify(newActions));
         
     }
 
@@ -38,7 +34,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9fe147b783452210cfbfc5a6feaad3f3</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Parse User Actions</sys_name>
         <sys_overrides/>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
@@ -46,7 +42,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_script_client_9fe147b783452210cfbfc5a6feaad3f3</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-28 20:59:53</sys_updated_on>
+        <sys_updated_on>2025-05-01 21:26:45</sys_updated_on>
         <table>x_417611_daves_o_0_st_okta_user</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

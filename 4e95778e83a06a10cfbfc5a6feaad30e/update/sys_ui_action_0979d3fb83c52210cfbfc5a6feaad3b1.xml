@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name/>
+        <action_name>Do Thing I selected in the selection box</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -26,11 +26,44 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <messages>aaaaaaaa</messages>
-        <name>Reset Password</name>
-        <onclick/>
+        <messages/>
+        <name>Do Thing I selected in the selection box</name>
+        <onclick>executeAction()</onclick>
         <order>100</order>
-        <script/>
+        <script><![CDATA[function executeAction() {
+    var selectedAction = g_form.getValue('user_action_selection');
+    var actionList;
+    try {
+        actionList = JSON.parse(g_form.getValue('user_actions'));
+    } catch (e) {
+        return;
+    }
+
+    var action = JSON.parse(actionList[selectedAction]);
+    g_form.clearMessages();
+    g_form.addInfoMessage("Running " + selectedAction);
+    //debugger;
+    var runAction = new GlideAjax('x_417611_daves_o_0.DavesOktaThingUtils');
+    runAction.addParam('sysparm_name', 'processUserSelection');
+    runAction.addParam('sysparm_url', action.href);
+    runAction.addParam('sysparm_method', action.method);
+    //alert(actionsList[selectedAction]);
+    runAction.getXMLAnswer(returnStatus);
+}
+
+function returnStatus(response) {
+    g_form.addInfoMessage("DONE");
+    var output = JSON.parse(response);
+    if (output.status_code != 200) {
+        g_form.addInfoMessage("Result: " + output.response);
+    } else {
+        g_form.addInfoMessage("Result: Success");
+    }
+
+
+}
+
+//action.setRedirectURL(current);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -41,17 +74,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0979d3fb83c52210cfbfc5a6feaad3b1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Reset Password</sys_name>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Do Thing I selected in the selection box</sys_name>
         <sys_overrides/>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_ui_action_0979d3fb83c52210cfbfc5a6feaad3b1</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-28 21:25:16</sys_updated_on>
+        <sys_updated_on>2025-05-02 19:26:31</sys_updated_on>
         <table>x_417611_daves_o_0_st_okta_user</table>
         <ui11_compatible>true</ui11_compatible>
-        <ui16_compatible>false</ui16_compatible>
+        <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>
 </record_update>

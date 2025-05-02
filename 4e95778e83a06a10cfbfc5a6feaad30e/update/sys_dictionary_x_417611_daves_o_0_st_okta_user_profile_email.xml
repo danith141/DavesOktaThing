@@ -34,7 +34,7 @@
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>200</max_length>
         <name>x_417611_daves_o_0_st_okta_user</name>
         <next_element/>
         <primary>false</primary>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_dictionary_x_417611_daves_o_0_st_okta_user_profile_email</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-09 22:45:59</sys_updated_on>
+        <sys_updated_on>2025-05-01 20:40:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
