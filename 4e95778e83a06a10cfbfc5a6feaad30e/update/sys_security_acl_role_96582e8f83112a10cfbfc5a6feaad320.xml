@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-05-08 20:05:46</sys_created_on>
+        <sys_id>96582e8f83112a10cfbfc5a6feaad320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5dc9de0b83dde610cfbfc5a6feaad37a.x_417611_daves_o_0.admin</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_security_acl display_value="5dc9de0b83dde610cfbfc5a6feaad37a">8fec1e4f83dde610cfbfc5a6feaad397</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_96582e8f83112a10cfbfc5a6feaad320</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:05:46</sys_updated_on>
+        <sys_user_role display_value="x_417611_daves_o_0.admin" name="x_417611_daves_o_0.admin">4295778e83a06a10cfbfc5a6feaad324</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

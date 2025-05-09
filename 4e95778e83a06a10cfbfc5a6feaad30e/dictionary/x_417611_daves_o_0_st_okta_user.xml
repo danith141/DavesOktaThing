@@ -4,7 +4,7 @@
         <element label="statusChanged" max_length="40" name="statuschanged" type="glide_date_time"/>
         <element label="User Actions" max_length="4000" name="user_actions" type="simple_name_values"/>
         <element label="status" max_length="40" name="status" type="string"/>
-        <element label="profile_login" max_length="40" name="profile_login" type="string"/>
+        <element label="profile_login" max_length="200" name="profile_login" type="string"/>
         <element choice="1" label="User Action Selection" max_length="4000" name="user_action_selection" type="choice">
             <choice/>
         </element>
@@ -15,6 +15,7 @@
         <element label="profile_mobilePhone" max_length="40" name="profile_mobilephone" type="phone_number_e164"/>
         <element label="lastLogin" max_length="40" name="lastlogin" type="glide_date_time"/>
         <element label="_links_self" max_length="1024" name="links_self" type="url"/>
+        <element label="User actions raw" max_length="10000" name="user_actions_raw" type="string"/>
         <element label="credentials_recovery_question" max_length="200" name="credentials_recovery_question" type="string"/>
         <element label="profile_lastName" max_length="100" name="profile_lastname" type="string"/>
         <element label="id" max_length="20" name="id" type="string"/>

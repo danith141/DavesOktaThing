@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="sys_user" section_id="80e894e283952610cfbfc5a6feaad39f" sys_domain="global" table="sys_user" version="3" view="dot">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>89e95c2683952610cfbfc5a6feaad3f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>1</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>81e95c2683952610cfbfc5a6feaad3f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>middle_name</element>
+            <position>2</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>89e95c2683952610cfbfc5a6feaad3f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>3</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>81e95c2683952610cfbfc5a6feaad3f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>4</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>89e95c2683952610cfbfc5a6feaad3f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>81e95c2683952610cfbfc5a6feaad3fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>6</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>89e95c2683952610cfbfc5a6feaad3fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>home_phone</element>
+            <position>7</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>81e95c2683952610cfbfc5a6feaad3fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_phone</element>
+            <position>8</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>89e95c2683952610cfbfc5a6feaad3fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>9</position>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:26:24</sys_created_on>
+            <sys_id>81e95c2683952610cfbfc5a6feaad3fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sys_user" display_value="sys_user" name="sys_user" sys_domain="global" view="08e894e283952610cfbfc5a6feaad32b">80e894e283952610cfbfc5a6feaad39f</sys_ui_section>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:26:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>sys_user</caption>
+            <header>false</header>
+            <name>sys_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>david.nendza@gmail.com</sys_created_by>
+            <sys_created_on>2025-05-06 20:21:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80e894e283952610cfbfc5a6feaad39f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+            <sys_update_name>sys_ui_section_80e894e283952610cfbfc5a6feaad39f</sys_update_name>
+            <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+            <sys_updated_on>2025-05-06 20:21:58</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="dot" name="dot">08e894e283952610cfbfc5a6feaad32b</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

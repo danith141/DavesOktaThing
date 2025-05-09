@@ -1292,15 +1292,16 @@
                     "preset": null,
                     "propertyValues": {},
                     "repeatWith": {
-                        "type": "JSON_LITERAL",
-                        "value": [
-                            {
-                                "task": "A"
-                            },
-                            {
-                                "task": "B"
-                            }
-                        ]
+                        "binding": {
+                            "address": [
+                                "look_up_okta_user",
+                                "results",
+                                "0",
+                                "user_actions",
+                                "displayValue"
+                            ]
+                        },
+                        "type": "DATA_OUTPUT_BINDING"
                     },
                     "slot": null,
                     "styles": {
@@ -2707,7 +2708,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "activated,created,id,status,type,links_self,credentials_recovery_question,lastlogin,lastupdated,passwordchanged,profile_email,profile_secondemail,statuschanged,profile_mobilephone"
+                "value": "activated,created,id,status,type,links_self,credentials_recovery_question,lastlogin,lastupdated,passwordchanged,profile_email,profile_secondemail,statuschanged,profile_mobilephone,user_actions"
             },
             "sortType": {
                 "type": "JSON_LITERAL",
@@ -2899,7 +2900,7 @@
         "id": "",
         "initialValue": {
             "type": "JSON_LITERAL",
-            "value": "blahblah@example.com"
+            "value": "david.nendza@gmail.com"
         },
         "name": "userId",
         "shape": "",
@@ -2918,14 +2919,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-04 19:57:40</sys_created_on>
         <sys_id>9870e30083786a10cfbfc5a6feaad394</sys_id>
-        <sys_mod_count>91</sys_mod_count>
+        <sys_mod_count>93</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_ux_macroponent_9870e30083786a10cfbfc5a6feaad394</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-24 19:07:20</sys_updated_on>
+        <sys_updated_on>2025-05-08 17:20:32</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9870e30083786a10cfbfc5a6feaad394"/>
 </record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="profile_login" table="x_417611_daves_o_0_st_okta_user">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="user_actions_raw" table="x_417611_daves_o_0_st_okta_user">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>profile_login</column_label>
+        <column_label>User actions raw</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,7 +26,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>profile_login</element>
+        <element>user_actions_raw</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -34,7 +34,7 @@
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>200</max_length>
+        <max_length>10000</max_length>
         <name>x_417611_daves_o_0_st_okta_user</name>
         <next_element/>
         <primary>false</primary>
@@ -51,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>david.nendza@gmail.com</sys_created_by>
-        <sys_created_on>2025-04-07 17:05:05</sys_created_on>
-        <sys_name>profile_login</sys_name>
+        <sys_created_on>2025-05-08 15:29:13</sys_created_on>
+        <sys_name>User actions raw</sys_name>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
-        <sys_update_name>sys_dictionary_x_417611_daves_o_0_st_okta_user_profile_login</sys_update_name>
+        <sys_update_name>sys_dictionary_x_417611_daves_o_0_st_okta_user_user_actions_raw</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-05-09 14:48:21</sys_updated_on>
+        <sys_updated_on>2025-05-08 16:04:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

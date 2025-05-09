@@ -4,7 +4,51 @@
         <app_config display_value="dot">4430638c83386a10cfbfc5a6feaad3bc</app_config>
         <description/>
         <disable_auto_reflow>true</disable_auto_reflow>
-        <event_mappings/>
+        <event_mappings>[
+    {
+        "eventMappingId": "mjseTeehhgjjBUAhhjjroASGuCOiom",
+        "isConfiguration": null,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_417611_daves_o_0.CONTENT_UPDATED_RELAY_f342a15a8345aa90cfbfc5a6feaad308",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_417611_daves_o_0.CONTENT_UPDATED_RELAY_f342a15a8345aa90cfbfc5a6feaad308",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "clientTransformScript": null,
+                "clientTransformScriptUxValue": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": {
+                    "apiName": "sn_canvas_core.CONTENT_UPDATED",
+                    "payload": {
+                        "container": {
+                            "params": {
+                                "binding": {
+                                    "address": [
+                                        "params"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    },
+                    "sysId": "75f3815fb0d9c38bb6df1626a0f284c4"
+                },
+                "operation": null,
+                "targetId": "aabGAseehhJHCaaJwjjhhaaGRKpdKNaaN",
+                "type": "EVENT"
+            }
+        ]
+    }
+]</event_mappings>
         <macroponent display_value="Default">f342a15a8345aa90cfbfc5a6feaad308</macroponent>
         <macroponent_config>{
     "bare": {
@@ -27,6 +71,7 @@
         "type": "JSON_LITERAL",
         "value": ""
     },
+    "newParameter1": null,
     "propagateNotifications": {
         "type": "JSON_LITERAL",
         "value": false
@@ -49,7 +94,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bb42a55a8345aa90cfbfc5a6feaad36b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
@@ -57,7 +102,7 @@
         <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
         <sys_update_name>sys_ux_screen_bb42a55a8345aa90cfbfc5a6feaad36b</sys_update_name>
         <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
-        <sys_updated_on>2025-04-23 20:48:37</sys_updated_on>
+        <sys_updated_on>2025-05-06 20:03:34</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=bb42a55a8345aa90cfbfc5a6feaad36b"/>
 </record_update>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Execute user action</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var qParms = request.queryParams;
+
+	try {
+		var inputs = {};
+		inputs['endpoint'] = qParms.url[0]; // URL 
+		inputs['method'] = qParms.method[0]; // String 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().action('x_417611_daves_o_0.do_the_okta_user_action_selection').inBackground().withInputs(inputs).run();
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().action('x_417611_daves_o_0.do_the_okta_user_action_selection').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		response.setBody(outputs['response']); // String
+		response.setStatus(outputs['status_code']);		
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+	}
+	
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_417611_daves_o_0/user_action</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-05-08 20:57:44</sys_created_on>
+        <sys_id>0213becf83512a10cfbfc5a6feaad39f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Execute user action</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_ws_operation_0213becf83512a10cfbfc5a6feaad39f</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-05-08 21:09:30</sys_updated_on>
+        <web_service_definition display_value="User Action">2bb2be8b83512a10cfbfc5a6feaad3d7</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

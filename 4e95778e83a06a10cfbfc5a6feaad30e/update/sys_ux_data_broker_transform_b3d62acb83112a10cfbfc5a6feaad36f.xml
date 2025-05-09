@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_417611_daves_o_0.Execute user action</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Execute user action</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+    {&#13;
+        "name": "url",&#13;
+        "label": "url",&#13;
+        "description": "URL for the action",&#13;
+        "readOnly": false,&#13;
+        "fieldType": "string",&#13;
+        "valueType": "string",&#13;
+        "mandatory": true&#13;
+    },&#13;
+    {&#13;
+        "name": "method",&#13;
+        "label": "method",&#13;
+        "description": "method for the action",&#13;
+        "readOnly": false,&#13;
+        "fieldType": "string",&#13;
+        "valueType": "string",&#13;
+        "mandatory": true&#13;
+    }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "URL for the action",
+  "comment" : ""
+}, {
+  "message" : "method",
+  "comment" : ""
+}, {
+  "message" : "method for the action",
+  "comment" : ""
+}, {
+  "message" : "url",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var url = input.url;
+	var method = input.method;
+
+    //g_form.clearMessages();
+    //g_form.addInfoMessage("Running " + selectedAction);
+    //debugger;
+    var runAction = new GlideAjax('x_417611_daves_o_0.DavesOktaThingUtils');
+    runAction.addParam('sysparm_name', 'processUserSelection');
+    runAction.addParam('sysparm_url', url);
+    runAction.addParam('sysparm_method', method);
+    //alert(actionsList[selectedAction]);
+    runAction.getXMLAnswer(returnStatus);
+}
+
+function returnStatus(response) {
+	var status = '';
+    //g_form.addInfoMessage("DONE");
+    var output = JSON.parse(response);
+    if (output.status_code != 200) {
+        status = "Result: " + output.response;
+    } else {
+        status = "Result: Success";
+    }
+	return status;
+
+}
+
+//action.setRedirectURL(current);]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-05-08 20:01:01</sys_created_on>
+        <sys_id>b3d62acb83112a10cfbfc5a6feaad36f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Execute user action</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_b3d62acb83112a10cfbfc5a6feaad36f</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-05-08 20:39:23</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3d62acb83112a10cfbfc5a6feaad36f"/>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>CONTENT_UPDATED_RELAY_f342a15a8345aa90cfbfc5a6feaad308</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Add parameters to URL Relay (Default)</label>
+        <props>[
+    {
+        "defaultValue": null,
+        "description": "Add parameters to the URL",
+        "fieldType": "json",
+        "label": "Parameters",
+        "name": "params",
+        "type": "json",
+        "typeMetadata": {
+            "schema": {
+                "properties": {
+                    "selectedIndex": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Add parameters to the URL",
+  "comment" : ""
+}, {
+  "message" : "Parameters",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>david.nendza@gmail.com</sys_created_by>
+        <sys_created_on>2025-05-05 18:51:49</sys_created_on>
+        <sys_id>9b87fe4e8391a210cfbfc5a6feaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add parameters to URL Relay (Default)</sys_name>
+        <sys_package display_value="Daves Okta Thing" source="x_417611_daves_o_0">4e95778e83a06a10cfbfc5a6feaad30e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Daves Okta Thing">4e95778e83a06a10cfbfc5a6feaad30e</sys_scope>
+        <sys_update_name>sys_ux_event_9b87fe4e8391a210cfbfc5a6feaad333</sys_update_name>
+        <sys_updated_by>david.nendza@gmail.com</sys_updated_by>
+        <sys_updated_on>2025-05-05 18:51:49</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=9b87fe4e8391a210cfbfc5a6feaad333"/>
+</record_update>
